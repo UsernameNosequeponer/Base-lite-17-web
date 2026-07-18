@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Staff Técnico - Base Élite 17</title>
+  <title data-i18n="staff.page-title">Staff Técnico - Base Élite 17</title>
   <meta name="description" content="Conoce al equipo técnico de Base Élite 17: entrenadores internacionales con décadas de experiencia, formación de élite y pasión por el fútbol formativo.">
   <meta property="og:title" content="Staff Técnico | Base Élite 17">
   <meta property="og:description" content="Entrenadores internacionales con décadas de experiencia formando a las futuras estrellas del fútbol.">
@@ -28,7 +28,7 @@
 </head>
 <body>
 
-  <a href="#contenido" class="skip-link">Ir al contenido principal</a>
+  <a href="#contenido" class="skip-link" data-i18n="skip">Ir al contenido principal</a>
 
   <header>
     <div class="container header-flex">
@@ -38,15 +38,26 @@
       </a>
       <nav aria-label="Navegación principal">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="programas.html">Programas</a></li>
-          <li><a href="resultados.html">Resultados</a></li>
-          <li><a href="torneos.html">Torneos</a></li>
-          <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-          <li><a href="staff.html" class="activo">Staff</a></li>
-          <li><a href="index.html#contacto">Contacto</a></li>
+          <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+          <li><a href="programas.html" data-i18n="nav.programas">Programas</a></li>
+          <li><a href="resultados.html" data-i18n="nav.resultados">Resultados</a></li>
+          <li><a href="torneos.html" data-i18n="nav.torneos">Torneos</a></li>
+          <li><a href="sobre-nosotros.html" data-i18n="nav.sobre">Sobre Nosotros</a></li>
+          <li><a href="staff.html" class="activo" data-i18n="nav.staff">Staff</a></li>
+          <li><a href="index.html#contacto" data-i18n="nav.contacto">Contacto</a></li>
         </ul>
       </nav>
+      <div class="lang-selector" role="navigation" aria-label="Selector de idioma">
+        <button class="lang-btn" aria-expanded="false" aria-haspopup="listbox">
+          <span class="lang-current">ES</span>
+          <svg class="lang-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <ul class="lang-list" role="listbox">
+          <li role="option" data-lang="es" class="lang-active">ES — Español</li>
+          <li role="option" data-lang="ca">CA — Català</li>
+          <li role="option" data-lang="en">EN — English</li>
+        </ul>
+      </div>
       <button class="menu-boton" aria-label="Abrir menú" aria-expanded="false">&#9776;</button>
     </div>
   </header>
@@ -55,8 +66,8 @@
 
     <section class="pagina-header gris">
       <div class="container">
-        <h1 class="seccion-titulo">Staff Técnico</h1>
-        <p class="seccion-subtitulo">Nuestro equipo está formado por entrenadores y profesionales con formación internacional, décadas de experiencia y una pasión genuina por el desarrollo de jóvenes futbolistas.</p>
+        <h1 class="seccion-titulo" data-i18n="staff.titulo">Staff Técnico</h1>
+        <p class="seccion-subtitulo" data-i18n="staff.sub">Nuestro equipo está formado por entrenadores y profesionales con formación internacional, décadas de experiencia y una pasión genuina por el desarrollo de jóvenes futbolistas.</p>
         <img src="imagenes/Staff.jpeg" alt="Equipo técnico completo de Base Élite 17" style="width:100%;height:auto;border-radius:0.75rem;margin-top:2rem;display:block;" loading="lazy" width="1200" height="400">
       </div>
     </section>
@@ -69,12 +80,12 @@
           </div>
           <div class="staff-info">
             <h3>Marc</h3>
-            <span class="staff-cargo">Director de la Academia</span>
-            <p>Marc es el director de la academia y el corazón de Base Élite 17. Se encarga de que todo funcione a la perfección: desde la supervisión de entrenamientos y torneos hasta la relación con las familias. Su liderazgo y cercanía garantizan que cada jugador viva una experiencia de primer nivel.</p>
+            <span class="staff-cargo" data-i18n="staff.marc.titulo">Director de la Academia</span>
+            <p data-i18n="staff.marc.desc">Marc es el director de la academia y el corazón de Base Élite 17. Se encarga de que todo funcione a la perfección: desde la supervisión de entrenamientos y torneos hasta la relación con las familias. Su liderazgo y cercanía garantizan que cada jugador viva una experiencia de primer nivel.</p>
             <div class="staff-tags">
-              <span>Dirección deportiva</span>
-              <span>Liderazgo</span>
-              <span>Fútbol formativo</span>
+              <span data-i18n="staff.marc.tag1">Dirección deportiva</span>
+              <span data-i18n="staff.marc.tag2">Liderazgo</span>
+              <span data-i18n="staff.marc.tag3">Fútbol formativo</span>
             </div>
           </div>
         </div>
@@ -91,12 +102,12 @@
             </div>
             <div class="staff-info">
               <h3>Verónica</h3>
-              <span class="staff-cargo">Entrenadora</span>
-              <p>Con una trayectoria impresionante en el fútbol formativo, Verónica ha formado parte de algunas de las academias más prestigiosas del país, incluida la cantera del Real Madrid. Suma muchos años de experiencia formando a jóvenes futbolistas, aportando una metodología de primer nivel y una pasión contagiosa por el deporte.</p>
+              <span class="staff-cargo" data-i18n="staff.vero.titulo">Entrenadora</span>
+              <p data-i18n="staff.vero.desc">Con una trayectoria impresionante en el fútbol formativo, Verónica ha formado parte de algunas de las academias más prestigiosas del país, incluida la cantera del Real Madrid. Suma muchos años de experiencia formando a jóvenes futbolistas, aportando una metodología de primer nivel y una pasión contagiosa por el deporte.</p>
               <div class="staff-tags">
-                <span>Real Madrid Academia</span>
-                <span>Experiencia internacional</span>
-                <span>Fútbol formativo</span>
+                <span data-i18n="staff.vero.tag1">Real Madrid Academia</span>
+                <span data-i18n="staff.vero.tag2">Experiencia internacional</span>
+                <span data-i18n="staff.vero.tag3">Fútbol formativo</span>
               </div>
             </div>
           </div>
@@ -107,12 +118,12 @@
             </div>
             <div class="staff-info">
               <h3>Albert</h3>
-              <span class="staff-cargo">Entrenador de Porteros</span>
-              <p>Portero con muchos años de experiencia jugando a un nivel muy alto. Albert aporta un conocimiento profundo de la posición, combinando técnica depurada con la lectura del juego que solo da la experiencia competitiva. Con él, cada portero y portera desarrolla su verdadero potencial.</p>
+              <span class="staff-cargo" data-i18n="staff.albert.titulo">Entrenador de Porteros</span>
+              <p data-i18n="staff.albert.desc">Portero con muchos años de experiencia jugando a un nivel muy alto. Albert aporta un conocimiento profundo de la posición, combinando técnica depurada con la lectura del juego que solo da la experiencia competitiva. Con él, cada portero y portera desarrolla su verdadero potencial.</p>
               <div class="staff-tags">
-                <span>Portero de élite</span>
-                <span>Muchos años en alta competición</span>
-                <span>Especialista en posición</span>
+                <span data-i18n="staff.albert.tag1">Portero de élite</span>
+                <span data-i18n="staff.albert.tag2">Muchos años en alta competición</span>
+                <span data-i18n="staff.albert.tag3">Especialista en posición</span>
               </div>
             </div>
           </div>
@@ -123,12 +134,12 @@
             </div>
             <div class="staff-info">
               <h3>Alex</h3>
-              <span class="staff-cargo">Entrenador</span>
-              <p>Entrenador en Canovelles con una pasión innata por el fútbol formativo. Alex combina su experiencia en el campo con una gran capacidad para conectar con los jóvenes jugadores, adaptando sus sesiones a las necesidades de cada uno. Su energía y dedicación lo hacen un pilar fundamental del equipo técnico.</p>
+              <span class="staff-cargo" data-i18n="staff.alex.titulo">Entrenador</span>
+              <p data-i18n="staff.alex.desc">Entrenador en Canovelles con una pasión innata por el fútbol formativo. Alex combina su experiencia en el campo con una gran capacidad para conectar con los jóvenes jugadores, adaptando sus sesiones a las necesidades de cada uno. Su energía y dedicación lo hacen un pilar fundamental del equipo técnico.</p>
               <div class="staff-tags">
-                <span>Canovelles</span>
-                <span>Fútbol formativo</span>
-                <span>Conexión con jugadores</span>
+                <span data-i18n="staff.alex.tag1">Canovelles</span>
+                <span data-i18n="staff.alex.tag2">Fútbol formativo</span>
+                <span data-i18n="staff.alex.tag3">Conexión con jugadores</span>
               </div>
             </div>
           </div>
@@ -139,12 +150,12 @@
             </div>
             <div class="staff-info">
               <h3>Adam</h3>
-              <span class="staff-cargo">Entrenador</span>
-              <p>Con algunos años de experiencia como entrenador de fútbol formativo, Adam es una persona super cercana a los chicos. Además, es jugador a buen nivel, lo que le permite transmitir desde la experiencia directa lo que sienten sus jugadores en cada entrenamiento y partido.</p>
+              <span class="staff-cargo" data-i18n="staff.adam.titulo">Entrenador</span>
+              <p data-i18n="staff.adam.desc">Con algunos años de experiencia como entrenador de fútbol formativo, Adam es una persona super cercana a los chicos. Además, es jugador a buen nivel, lo que le permite transmitir desde la experiencia directa lo que sienten sus jugadores en cada entrenamiento y partido.</p>
               <div class="staff-tags">
-                <span>Fútbol formativo</span>
-                <span>Jugador en activo</span>
-                <span>Cercanía con los jugadores</span>
+                <span data-i18n="staff.adam.tag1">Fútbol formativo</span>
+                <span data-i18n="staff.adam.tag2">Jugador en activo</span>
+                <span data-i18n="staff.adam.tag3">Cercanía con los jugadores</span>
               </div>
             </div>
           </div>
@@ -159,22 +170,22 @@
     <div class="container footer-flex">
       <div>
         <span class="logo">Base Élite 17</span>
-        <p>Base educativa, formativa e inclusiva para el desarrollo integral de jugadores y jugadoras de fútbol profesional.</p>
+        <p data-i18n="footer.desc">Base educativa, formativa e inclusiva para el desarrollo integral de jugadores y jugadoras de fútbol profesional.</p>
       </div>
       <div>
-        <h4>Enlaces</h4>
+        <h4 data-i18n="footer.enlaces">Enlaces</h4>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="programas.html">Programas</a></li>
-          <li><a href="resultados.html">Resultados</a></li>
-          <li><a href="torneos.html">Torneos</a></li>
-          <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-          <li><a href="staff.html">Staff</a></li>
-          <li><a href="index.html#contacto">Contacto</a></li>
+          <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+          <li><a href="programas.html" data-i18n="nav.programas">Programas</a></li>
+          <li><a href="resultados.html" data-i18n="nav.resultados">Resultados</a></li>
+          <li><a href="torneos.html" data-i18n="nav.torneos">Torneos</a></li>
+          <li><a href="sobre-nosotros.html" data-i18n="nav.sobre">Sobre Nosotros</a></li>
+          <li><a href="staff.html" data-i18n="nav.staff">Staff</a></li>
+          <li><a href="index.html#contacto" data-i18n="nav.contacto">Contacto</a></li>
         </ul>
       </div>
       <div>
-        <h4>Redes</h4>
+        <h4 data-i18n="footer.redes">Redes</h4>
         <ul>
           <li><a href="https://instagram.com/baseelite17" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://tiktok.com/@baseelite17" target="_blank" rel="noopener">TikTok</a></li>
@@ -183,10 +194,11 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Base Élite 17. Todos los derechos reservados.</p>
+      <p data-i18n="footer.copyright">&copy; 2026 Base Élite 17. Todos los derechos reservados.</p>
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

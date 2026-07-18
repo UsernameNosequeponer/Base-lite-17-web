@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resultados - Base Élite 17 | Academia de Fútbol</title>
+  <title data-i18n="res.page-title">Resultados - Base Élite 17 | Academia de Fútbol</title>
   <meta name="description" content="Resultados de los programas de Base Élite 17: mejora continua y personalizada, toque único y desarrollo integral para jugadores de fútbol.">
   <meta name="keywords" content="resultados, mejora continua, fútbol, desarrollo integral, coaching deportivo, Base Élite 17">
   <meta name="author" content="Base Élite 17">
@@ -22,7 +22,7 @@
 </head>
 <body>
 
-  <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+  <a href="#contenido" class="skip-link" data-i18n="skip">Saltar al contenido principal</a>
 
   <header>
     <div class="container header-flex">
@@ -32,15 +32,26 @@
       </a>
       <nav aria-label="Navegación principal">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="programas.html">Programas</a></li>
-          <li><a href="resultados.html" class="activo">Resultados</a></li>
-          <li><a href="torneos.html">Torneos</a></li>
-          <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-          <li><a href="staff.html">Staff</a></li>
-          <li><a href="index.html#contacto">Contacto</a></li>
+          <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+          <li><a href="programas.html" data-i18n="nav.programas">Programas</a></li>
+          <li><a href="resultados.html" class="activo" data-i18n="nav.resultados">Resultados</a></li>
+          <li><a href="torneos.html" data-i18n="nav.torneos">Torneos</a></li>
+          <li><a href="sobre-nosotros.html" data-i18n="nav.sobre">Sobre Nosotros</a></li>
+          <li><a href="staff.html" data-i18n="nav.staff">Staff</a></li>
+          <li><a href="index.html#contacto" data-i18n="nav.contacto">Contacto</a></li>
         </ul>
       </nav>
+      <div class="lang-selector" role="navigation" aria-label="Selector de idioma">
+        <button class="lang-btn" aria-expanded="false" aria-haspopup="listbox">
+          <span class="lang-current">ES</span>
+          <svg class="lang-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <ul class="lang-list" role="listbox">
+          <li role="option" data-lang="es" class="lang-active">ES — Español</li>
+          <li role="option" data-lang="ca">CA — Català</li>
+          <li role="option" data-lang="en">EN — English</li>
+        </ul>
+      </div>
       <button class="menu-boton" aria-label="Abrir menú" aria-expanded="false">☰</button>
     </div>
   </header>
@@ -49,8 +60,8 @@
 
     <section class="pagina-header">
       <div class="container">
-        <h2 class="seccion-titulo">Resultados que transforman</h2>
-        <p class="seccion-subtitulo">La mejora es brutal porque partimos del punto de evolución en el que se encuentra cada jugador y ayudamos a reforzar, aprender y salir del estancamiento, utilizando técnicas de coaching y psicología deportiva.</p>
+        <h2 class="seccion-titulo" data-i18n="res.titulo">Resultados que transforman</h2>
+        <p class="seccion-subtitulo" data-i18n="res.sub">La mejora es brutal porque partimos del punto de evolución en el que se encuentra cada jugador y ayudamos a reforzar, aprender y salir del estancamiento, utilizando técnicas de coaching y psicología deportiva.</p>
       </div>
     </section>
 
@@ -61,9 +72,9 @@
         </div>
         <div class="resultado-full-texto">
           <span class="resultado-numero">01</span>
-          <h3>Mejora continua y personalizada</h3>
-          <p>Nuestros programas se centran en un seguimiento individualizado, donde la evaluación continua y los informes detallados te permiten visualizar tu evolución y los aspectos de mejora.</p>
-          <p>Garantizamos un crecimiento sostenido para cada deportista, adaptando el entrenamiento a su ritmo y potenciando sus puntos fuertes.</p>
+          <h3 data-i18n="res.r1.titulo">Mejora continua y personalizada</h3>
+          <p data-i18n="res.r1.p1">Nuestros programas se centran en un seguimiento individualizado, donde la evaluación continua y los informes detallados te permiten visualizar tu evolución y los aspectos de mejora.</p>
+          <p data-i18n="res.r1.p2">Garantizamos un crecimiento sostenido para cada deportista, adaptando el entrenamiento a su ritmo y potenciando sus puntos fuertes.</p>
         </div>
       </div>
     </section>
@@ -75,9 +86,9 @@
         </div>
         <div class="resultado-full-texto">
           <span class="resultado-numero">02</span>
-          <h3>Nuestro toque único</h3>
-          <p>Lo que nos hace diferentes es la energía y vitalidad de nuestros técnicos, combinada con la experiencia de los coaches deportivos y educadores.</p>
-          <p>Esta fórmula es Base Élite y asegura un desarrollo integral para todos nuestros jugadores y jugadoras, tanto en el campo como fuera de él.</p>
+          <h3 data-i18n="res.r2.titulo">Nuestro toque único</h3>
+          <p data-i18n="res.r2.p1">Lo que nos hace diferentes es la energía y vitalidad de nuestros técnicos, combinada con la experiencia de los coaches deportivos y educadores.</p>
+          <p data-i18n="res.r2.p2">Esta fórmula es Base Élite y asegura un desarrollo integral para todos nuestros jugadores y jugadoras, tanto en el campo como fuera de él.</p>
         </div>
       </div>
     </section>
@@ -88,22 +99,22 @@
     <div class="container footer-flex">
       <div>
         <span class="logo">Baseélite17</span>
-        <p>Base educativa, formativa e inclusiva para el desarrollo integral de jugadores y jugadoras de fútbol profesional.</p>
+        <p data-i18n="footer.desc">Base educativa, formativa e inclusiva para el desarrollo integral de jugadores y jugadoras de fútbol profesional.</p>
       </div>
       <div>
-        <h4>Enlaces</h4>
+        <h4 data-i18n="footer.enlaces">Enlaces</h4>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="programas.html">Programas</a></li>
-          <li><a href="resultados.html">Resultados</a></li>
-          <li><a href="torneos.html">Torneos</a></li>
-          <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-          <li><a href="staff.html">Staff</a></li>
-          <li><a href="index.html#contacto">Contacto</a></li>
+          <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+          <li><a href="programas.html" data-i18n="nav.programas">Programas</a></li>
+          <li><a href="resultados.html" data-i18n="nav.resultados">Resultados</a></li>
+          <li><a href="torneos.html" data-i18n="nav.torneos">Torneos</a></li>
+          <li><a href="sobre-nosotros.html" data-i18n="nav.sobre">Sobre Nosotros</a></li>
+          <li><a href="staff.html" data-i18n="nav.staff">Staff</a></li>
+          <li><a href="index.html#contacto" data-i18n="nav.contacto">Contacto</a></li>
         </ul>
       </div>
       <div>
-        <h4>Redes</h4>
+        <h4 data-i18n="footer.redes">Redes</h4>
         <ul>
           <li><a href="https://instagram.com/baseelite17" rel="noopener">Instagram</a></li>
           <li><a href="https://tiktok.com/@baseelite17" rel="noopener">TikTok</a></li>
@@ -112,10 +123,11 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Base Élite 17. Todos los derechos reservados.</p>
+      <p data-i18n="footer.copyright">&copy; 2026 Base Élite 17. Todos los derechos reservados.</p>
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 
 </body>

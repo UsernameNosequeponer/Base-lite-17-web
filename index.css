@@ -1,8 +1,4 @@
-﻿/* ========================================================
-   Base Élite 17 - Estilos principales
-   ======================================================== */
-
-/* ===== RESET ===== */
+﻿
 *,
 *::before,
 *::after {
@@ -37,7 +33,6 @@ h1, h2, h3, h4, h5, h6,
   font-family: 'Cormorant Garamond', 'Georgia', serif;
 }
 
-/* ===== SKIP LINK (accesibilidad) ===== */
 .skip-link {
   position: absolute;
   top: -100%;
@@ -72,7 +67,6 @@ a:hover {
   color: #d4c45a;
 }
 
-/* ===== CONTAINER ===== */
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -80,7 +74,6 @@ a:hover {
   width: 100%;
 }
 
-/* ===== HEADER ===== */
 header {
   position: fixed;
   top: 0;
@@ -120,7 +113,6 @@ header {
   margin: 0 auto 1.5rem;
 }
 
-/* ===== NAVEGACIÓN ===== */
 nav ul {
   display: flex;
   list-style: none;
@@ -151,7 +143,6 @@ nav a.activo {
   line-height: 1;
 }
 
-/* ===== HERO ===== */
 .hero {
   height: 100vh;
   display: flex;
@@ -212,7 +203,6 @@ nav a.activo {
   flex-wrap: wrap;
 }
 
-/* ===== BOTONES ===== */
 .boton {
   display: inline-block;
   padding: 0.85rem 2rem;
@@ -248,7 +238,6 @@ nav a.activo {
   color: #000;
 }
 
-/* ===== SECCIONES ===== */
 section {
   padding: 7rem 0;
   overflow: hidden;
@@ -348,7 +337,6 @@ blockquote {
   font-size: 1.15rem;
 }
 
-/* ===== SERVICIOS (grid) ===== */
 .servicios-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -420,7 +408,6 @@ blockquote {
   text-decoration: underline;
 }
 
-/* ===== RESULTADOS QUE TRANSFORMAN ===== */
 .resultado-full {
   padding: 5rem 0;
 }
@@ -480,7 +467,6 @@ blockquote {
   margin-bottom: 1rem;
 }
 
-/* ===== TORNEOS Y COMPETICIONES ===== */
 .torneos-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -588,13 +574,11 @@ blockquote {
   margin-bottom: 0.75rem;
 }
 
-/* ===== PÁGINAS INTERNAS ===== */
 .pagina-header {
   margin-top: 70px;
   padding: 5rem 0;
 }
 
-/* ===== SOBRE NOSOTROS ===== */
 .sobre-historia,
 .sobre-filosofia {
   padding: 6rem 0;
@@ -733,7 +717,6 @@ blockquote {
   font-weight: 500;
 }
 
-/* ===== 3D COVERFLOW ===== */
 #saber {
   min-height: 100vh;
   display: flex;
@@ -843,7 +826,6 @@ blockquote {
   transform: scale(1.1);
 }
 
-/* ===== MODALES ===== */
 .modal-overlay {
   display: none;
   position: fixed;
@@ -967,7 +949,6 @@ blockquote {
   font-size: 1rem;
 }
 
-/* ===== FOOTER ===== */
 footer {
   background: #1a1a1a;
   border-top: 1px solid #3a3a3a;
@@ -1027,6 +1008,79 @@ footer a:hover {
 .footer-bottom p {
   color: #666;
   font-size: 0.95rem;
+}
+
+/* ===== LANGUAGE SELECTOR ===== */
+.lang-selector {
+  position: relative;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: none;
+  border: 1px solid #555;
+  color: #e4e4e4;
+  padding: 0.3rem 0.65rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  letter-spacing: 0.5px;
+}
+
+.lang-btn:hover,
+.lang-btn[aria-expanded="true"] {
+  border-color: #c6b342;
+  color: #c6b342;
+}
+
+.lang-arrow {
+  transition: transform 0.2s;
+}
+
+.lang-btn[aria-expanded="true"] .lang-arrow {
+  transform: rotate(180deg);
+}
+
+.lang-list {
+  display: none;
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  background: #2a2a2a;
+  border: 1px solid #3a3a3a;
+  border-radius: 0.5rem;
+  padding: 0.35rem 0;
+  min-width: 160px;
+  z-index: 100;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  list-style: none;
+}
+
+.lang-list.abierto {
+  display: block;
+}
+
+.lang-list li {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  color: #aaa;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.lang-list li:hover {
+  background: rgba(198, 179, 66, 0.1);
+  color: #e4e4e4;
+}
+
+.lang-list li.lang-active {
+  color: #c6b342;
+  font-weight: 600;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -1123,7 +1177,6 @@ footer a:hover {
   .staff-card { padding: 1.5rem; }
 }
 
-/* ===== REDUCED MOTION ===== */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

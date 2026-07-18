@@ -5,6 +5,92 @@
 (function () {
   "use strict";
 
+  /* ---------- i18n ENGINE ---------- */
+  var SUPPORTED = ["es", "ca", "en"];
+  var currentLang = "es";
+
+  function detectLang() {
+    var stored = localStorage.getItem("be17-lang");
+    if (stored && SUPPORTED.indexOf(stored) !== -1) return stored;
+    var browser = (navigator.language || navigator.userLanguage || "es").slice(0, 2).toLowerCase();
+    return SUPPORTED.indexOf(browser) !== -1 ? browser : "es";
+  }
+
+  function setLang(lang) {
+    if (SUPPORTED.indexOf(lang) === -1) return;
+    currentLang = lang;
+    localStorage.setItem("be17-lang", lang);
+    document.documentElement.setAttribute("lang", lang);
+
+    var dict = window.I18N && I18N[lang] ? I18N[lang] : null;
+    if (!dict) return;
+
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n");
+      if (dict[key] !== undefined) {
+        el.textContent = dict[key];
+      }
+    });
+
+    document.querySelectorAll("[data-i18n-aria]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n-aria");
+      if (dict[key] !== undefined) {
+        el.setAttribute("aria-label", dict[key]);
+      }
+    });
+
+    var titleEl = document.querySelector("title[data-i18n]");
+    if (titleEl) {
+      var titleKey = titleEl.getAttribute("data-i18n");
+      if (dict[titleKey] !== undefined) {
+        document.title = dict[titleKey];
+      }
+    }
+
+    var langBtn = document.querySelector(".lang-current");
+    if (langBtn) langBtn.textContent = lang.toUpperCase();
+
+    document.querySelectorAll(".lang-list li").forEach(function (li) {
+      li.classList.toggle("lang-active", li.getAttribute("data-lang") === lang);
+    });
+  }
+
+  function initI18n() {
+    if (!window.I18N) return;
+    currentLang = detectLang();
+    setLang(currentLang);
+
+    var langBtn = document.querySelector(".lang-btn");
+    var langList = document.querySelector(".lang-list");
+    if (!langBtn || !langList) return;
+
+    langBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var open = langList.classList.toggle("abierto");
+      langBtn.setAttribute("aria-expanded", open);
+    });
+
+    langList.querySelectorAll("li").forEach(function (li) {
+      li.addEventListener("click", function () {
+        var lang = this.getAttribute("data-lang");
+        setLang(lang);
+        langList.classList.remove("abierto");
+        langBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    document.addEventListener("click", function () {
+      langList.classList.remove("abierto");
+      langBtn.setAttribute("aria-expanded", "false");
+    });
+
+    langList.addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
+  }
+
+  initI18n();
+
   /* ---------- MENÚ MÓVIL ---------- */
   var menuBoton = document.querySelector(".menu-boton");
   if (menuBoton) {
@@ -76,6 +162,13 @@
   /* Escape cierra modales */
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") {
+      var langListOpen = document.querySelector(".lang-list.abierto");
+      if (langListOpen) {
+        langListOpen.classList.remove("abierto");
+        var langBtnEsc = document.querySelector(".lang-btn");
+        if (langBtnEsc) langBtnEsc.setAttribute("aria-expanded", "false");
+        return;
+      }
       var abierto = document.querySelector(".modal-overlay.activo");
       if (abierto) cerrarModal(abierto);
     }
