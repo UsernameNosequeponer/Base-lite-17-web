@@ -872,6 +872,7 @@ blockquote {
   overflow-y: auto;
   position: relative;
   animation: modal-aparecer 0.3s ease;
+  margin: auto;
 }
 
 @keyframes modal-aparecer {
