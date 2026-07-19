@@ -46,8 +46,9 @@
       padding: 2rem;
       text-align: center;
       transition: border-color 0.3s, transform 0.3s;
+      cursor: pointer;
     }
-    .sede-card.sede-destacada {
+    .sede-card.sede-activa {
       border-color: #c6b342;
       border-width: 2px;
     }
@@ -81,6 +82,26 @@
       font-weight: 700;
       margin-bottom: 1rem;
     }
+    .campo-fondo {
+      position: relative;
+      min-height: 300px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-image 0.5s ease;
+    }
+    .campo-fondo::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.65);
+    }
+    .campo-fondo .container {
+      position: relative;
+      z-index: 1;
+    }
     .instalaciones-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -88,35 +109,18 @@
       margin-top: 2rem;
     }
     .instalacion-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 1rem;
+      text-align: center;
       background: #2a2a2a;
       border: 1px solid #3a3a3a;
       border-radius: 0.75rem;
       padding: 1.5rem;
     }
-    .instalacion-icono {
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: #c6b342;
-      flex-shrink: 0;
-      width: 50px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(198, 179, 66, 0.15);
-      border-radius: 0.5rem;
-      text-align: center;
-      line-height: 1.2;
-    }
-    .instalacion-texto h4 {
+    .instalacion-item h4 {
       color: #c6b342;
       font-size: 1.1rem;
       margin-bottom: 0.3rem;
     }
-    .instalacion-texto p {
+    .instalacion-item p {
       color: #aaa;
       font-size: 0.9rem;
       line-height: 1.5;
@@ -179,12 +183,12 @@
     <section class="gris" style="padding-top:0;">
       <div class="container">
         <div class="mapa-container">
-          <iframe src="https://www.google.com/maps?q=41.624649,2.296668&z=17&hl=es&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de ubicaciones de Base Élite 17"></iframe>
+          <iframe id="mapa-sede" src="https://www.google.com/maps?q=41.624649,2.296668&z=17&hl=es&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de ubicaciones de Base Élite 17"></iframe>
         </div>
 
         <div class="sede-info">
 
-          <div class="sede-card sede-destacada">
+          <div class="sede-card sede-activa" data-sede="bellavista" onclick="cambiarSede('bellavista')">
             <span class="sede-badge" data-i18n="ubi.principal">Sede principal</span>
             <h3 data-i18n="ubi.campo2.titulo">Camp de Futbol 7 Bellavista</h3>
             <p class="sede-direccion">Carrer d'Astúries, 2, 08521 Bellavista, Barcelona</p>
@@ -192,10 +196,10 @@
             <p><strong data-i18n="ubi.campo2.uso">Uso:</strong> <span data-i18n="ubi.campo2.uso.txt">Entrenamientos, tecnificación y torneos</span></p>
           </div>
 
-          <div class="sede-card">
-            <h3 data-i18n="ubi.campo1.titulo">Camp Municipal de Corrà d'Avall</h3>
-            <p class="sede-direccion">08520, Barcelona</p>
-            <p data-i18n="ubi.campo1.desc">Campo auxiliar para entrenamientos y competiciones. Superficie de césped natural con iluminación artificial.</p>
+          <div class="sede-card" data-sede="corro" onclick="cambiarSede('corro')">
+            <h3 data-i18n="ubi.campo1.titulo">Camp Municipal de Corró d'Avall</h3>
+            <p class="sede-direccion">Zona Esportiva Municipal, s/n, 08520 Les Franqueses del Vallès, Barcelona</p>
+            <p data-i18n="ubi.campo1.desc">Campo auxiliar para entrenamientos y competiciones. Superficie de césped artificial con marcador electrónico.</p>
             <p><strong data-i18n="ubi.campo1.uso">Uso:</strong> <span data-i18n="ubi.campo1.uso.txt">Entrenamientos y torneos oficiales</span></p>
           </div>
 
@@ -203,35 +207,26 @@
       </div>
     </section>
 
-    <section class="dorado">
+    <section class="campo-fondo" id="campo-fondo" style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('imagenes/campo-bellavista.png');">
       <div class="container">
-        <h2 class="seccion-titulo" style="color:#000;" data-i18n="ubi.inst.titulo">Nuestras Instalaciones</h2>
-        <p class="seccion-subtitulo" style="color:#333;" data-i18n="ubi.inst.sub">Nuestras instalaciones cuentan con lo esencial para una experiencia deportiva cómoda.</p>
+        <h2 class="seccion-titulo" data-i18n="ubi.inst.titulo">Nuestras Instalaciones</h2>
+        <p class="seccion-subtitulo" data-i18n="ubi.inst.sub">Nuestras instalaciones cuentan con lo esencial para una experiencia deportiva cómoda.</p>
 
         <div class="instalaciones-grid">
 
           <div class="instalacion-item">
-            <div class="instalacion-icono">Duchas</div>
-            <div class="instalacion-texto">
-              <h4 data-i18n="ubi.inst.duchas">Duchas</h4>
-              <p data-i18n="ubi.inst.duchas.desc">Vestuarios completos con duchas de agua caliente para antes y después de cada sesión.</p>
-            </div>
+            <h4 data-i18n="ubi.inst.duchas">Duchas</h4>
+            <p data-i18n="ubi.inst.duchas.desc">Vestuarios completos con duchas de agua caliente para antes y después de cada sesión.</p>
           </div>
 
           <div class="instalacion-item">
-            <div class="instalacion-icono">Vestuarios</div>
-            <div class="instalacion-texto">
-              <h4 data-i18n="ubi.inst.vestuarios">Vestuarios</h4>
-              <p data-i18n="ubi.inst.vestuarios.desc">Vestuarios amplios y equipados con taquillas individuales para cada jugador y jugadora.</p>
-            </div>
+            <h4 data-i18n="ubi.inst.vestuarios">Vestuarios</h4>
+            <p data-i18n="ubi.inst.vestuarios.desc">Vestuarios amplios y equipados con taquillas individuales para cada jugador y jugadora.</p>
           </div>
 
           <div class="instalacion-item">
-            <div class="instalacion-icono">Aparcamiento</div>
-            <div class="instalacion-texto">
-              <h4 data-i18n="ubi.inst.aparcamiento">Aparcamiento</h4>
-              <p data-i18n="ubi.inst.aparcamiento.desc">Zona de aparcamiento gratuita cerca de todos los campos para familias y acompañantes.</p>
-            </div>
+            <h4 data-i18n="ubi.inst.aparcamiento">Aparcamiento</h4>
+            <p data-i18n="ubi.inst.aparcamiento.desc">Zona de aparcamiento gratuita cerca de todos los campos para familias y acompañantes.</p>
           </div>
 
         </div>
@@ -278,6 +273,34 @@
 
   <script src="i18n.js"></script>
   <script src="script.js"></script>
+  <script>
+    var sedes = {
+      bellavista: {
+        coords: '41.624649,2.296668',
+        foto: 'imagenes/campo-bellavista.png'
+      },
+      corro: {
+        coords: '41.623393,2.29598',
+        foto: 'imagenes/campo-corro-avall.jpg'
+      }
+    };
+
+    function cambiarSede(nombre) {
+      var sede = sedes[nombre];
+      if (!sede) return;
+
+      document.getElementById('mapa-sede').src =
+        'https://www.google.com/maps?q=' + sede.coords + '&z=17&hl=es&output=embed';
+
+      document.getElementById('campo-fondo').style.backgroundImage =
+        "linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('" + sede.foto + "')";
+
+      document.querySelectorAll('.sede-card').forEach(function(card) {
+        card.classList.remove('sede-activa');
+      });
+      document.querySelector('[data-sede="' + nombre + '"]').classList.add('sede-activa');
+    }
+  </script>
 
 </body>
 </html>
