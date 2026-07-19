@@ -1149,6 +1149,9 @@ footer a:hover {
   .bg-mobile-02 .resultado-full-img {
     display: none;
   }
+  .bg-inclusion .inclusion-img {
+    display: none;
+  }
 
   nav ul {
     display: none;
