@@ -144,12 +144,12 @@ nav a.activo {
 }
 
 .hero {
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 70px;
+  padding-top: 70px;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
               url('https://primary.jwwb.nl/public/v/e/k/temp-rqjnchqaqxjoqqjsdeep/unnamed-standard.webp');
   background-size: cover;
