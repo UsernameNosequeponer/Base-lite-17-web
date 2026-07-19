@@ -1103,6 +1103,7 @@ footer a:hover {
   .resultado-full-img img { min-height: 250px; }
   .grid-3 { grid-template-columns: 1fr; }
   .servicios-grid { grid-template-columns: 1fr; }
+  .landing-grid-2 { grid-template-columns: 1fr; }
   .servicio-imagen { height: 250px; }
   .torneos-grid { grid-template-columns: 1fr; }
   .torneos-inclusion { grid-template-columns: 1fr; }
@@ -1323,6 +1324,11 @@ footer a:hover {
     width: 24px;
     height: 24px;
   }
+}
+
+/* ===== LANDING 2-COL GRID ===== */
+.landing-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /* ===== OPINIONES GRID ===== */
