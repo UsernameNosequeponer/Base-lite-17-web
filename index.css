@@ -1133,6 +1133,18 @@ footer a:hover {
   .staff-foto { width: 120px; height: 120px; }
   .staff-tags { justify-content: center; }
 
+  /* Mobile-only backgrounds */
+  .bg-mobile-01 {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('imagenes/mejora.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .bg-mobile-02 {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('imagenes/desarrollo.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
   nav ul {
     display: none;
     flex-direction: column;
@@ -1199,12 +1211,14 @@ footer a:hover {
 }
 
 /* ===== TAP TARGETS & TOUCH FIXES ===== */
-.menu-boton {
-  min-width: 44px;
-  min-height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media (max-width: 960px) {
+  .menu-boton {
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .lang-btn {
