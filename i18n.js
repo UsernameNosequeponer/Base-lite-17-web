@@ -16,6 +16,7 @@ var I18N = {
     "nav.equipo": "Equipo",
     "nav.inscripciones": "Inscripciones",
     "nav.ubicacion": "Ubicación",
+    "nav.valores": "Valores",
     "nav.aria": "Navegación principal",
     "menu.abrir": "Abrir menú",
     // FOOTER
@@ -243,7 +244,30 @@ var I18N = {
     "ubi.inst.primerosaux": "Primeros Auxilios",
     "ubi.inst.primerosaux.desc": "Botiquín de primeros auxilios disponible en cada sede y personal formado en emergencias.",
     "ubi.inst.campo7": "Campo de Fútbol 7",
-    "ubi.inst.campo7.desc": "Campo de fútbol 7 con césped artificial de alta calidad, ideal para entrenamientos de tecnología y torneos."
+    "ubi.inst.campo7.desc": "Campo de fútbol 7 con césped artificial de alta calidad, ideal para entrenamientos de tecnología y torneos.",
+    // VALORES
+    "val.page-title": "Valores y Filosofía - Base Élite 17",
+    "val.titulo": "Valores y Filosofía",
+    "val.sub": "Los principios que guían cada decisión, cada entrenamiento y cada relación dentro de Base Élite 17.",
+    "val.valores.titulo": "Nuestros valores",
+    "val.valores.sub": "Tres valores fundamentales que guían cada decisión, cada entrenamiento y cada relación dentro de Base Élite 17.",
+    "val.val.unidad.titulo": "Unidad",
+    "val.val.unidad.desc": "Creemos en la fuerza del equipo. Cada jugador es una pieza fundamental, y juntos somos capaces de alcanzar metas que individualmente serían imposibles.",
+    "val.val.humildad.titulo": "Humildad",
+    "val.val.humildad.desc": "Reconocer nuestros límites es el primer paso para superarlos. Enseñamos a valorar el esfuerzo por encima del resultado.",
+    "val.val.respeto.titulo": "Respeto",
+    "val.val.respeto.desc": "El respeto es la base de todo. Hacia los compañeros, los entrenadores, los árbitros, los rivales y uno mismo.",
+    "val.inc.titulo": "Inclusión y pasión por el fútbol",
+    "val.inc.p1": "En Base Élite 17, creemos que el fútbol es para todos. Nuestros torneos y ligas están diseñados para ser accesibles a jugadores y jugadoras de todas las edades y niveles.",
+    "val.inc.h4a": "Participación sin límites",
+    "val.inc.p2": "Puede participar todo el mundo, desde la etapa Escuela hasta Juveniles, en tres modalidades: masculina, femenina e inclusiva.",
+    "val.inc.h4b": "Experiencia de élite",
+    "val.inc.p3": "Más allá del juego, nuestro objetivo es que cada participante se sienta como un futbolista de élite: staff fotográfico, fisioterapia, equipamiento completo y la guía de nuestros coaches.",
+    "val.quote.texto": "Que disfruten del camino y que tengan ganas de seguir por más, que lo sientan importante, no por el nivel de juego o categoría sino por el corazón.",
+    "val.quote.autor": "— Fundador de Base Élite 17",
+    "val.cta.titulo": "¿Quieres conocernos?",
+    "val.cta.desc": "Descubre todo lo que hacemos en Base Élite 17 para formar a los mejores futbolistas.",
+    "val.cta.btn": "Ver qué hacemos"
   },
 
   ca: {
@@ -263,6 +287,7 @@ var I18N = {
     "nav.equipo": "Equip",
     "nav.inscripciones": "Inscripcions",
     "nav.ubicacion": "Ubicació",
+    "nav.valores": "Valors",
     "nav.aria": "Navegació principal",
     "menu.abrir": "Obre el menú",
     // FOOTER
@@ -490,7 +515,30 @@ var I18N = {
     "ubi.inst.primerosaux": "Primers Auxilis",
     "ubi.inst.primerosaux.desc": "Farmaciola de primers auxilis disponible a cada seu i personal format en emergències.",
     "ubi.inst.campo7": "Camp de Futbol 7",
-    "ubi.inst.campo7.desc": "Camp de futbol 7 amb gespa artificial d'alta qualitat, ideal per a entrenaments de tecnificació i tornejos."
+    "ubi.inst.campo7.desc": "Camp de futbol 7 amb gespa artificial d'alta qualitat, ideal per a entrenaments de tecnificació i tornejos.",
+    // VALORES
+    "val.page-title": "Valors i Filosofia - Base Élite 17",
+    "val.titulo": "Valors i Filosofia",
+    "val.sub": "Els principis que guien cada decisió, cada entrenament i cada relació dins de Base Élite 17.",
+    "val.valores.titulo": "Els nostres valors",
+    "val.valores.sub": "Tres valors fonamentals que guien cada decisió, cada entrenament i cada relació dins de Base Élite 17.",
+    "val.val.unidad.titulo": "Unitat",
+    "val.val.unidad.desc": "Creiem en la força de l'equip. Cada jugador és una peça fonamental, i junts som capaços d'assolir metes que individualment serien impossibles.",
+    "val.val.humildad.titulo": "Humilitat",
+    "val.val.humildad.desc": "Reconèixer els nostres límits és el primer pas per superar-los. Ensenyem a valorar l'esforç per sobre del resultat.",
+    "val.val.respeto.titulo": "Respecte",
+    "val.val.respeto.desc": "El respecte és la base de tot. Cap als companys, els entrenadors, els àrbitres, els rivals i un mateix.",
+    "val.inc.titulo": "Inclusió i passió pel futbol",
+    "val.inc.p1": "A Base Élite 17, creiem que el futbol és per a tots. Els nostres tornejos i lligues estan dissenyats per ser accessibles a jugadores i jugadores de totes les edats i nivells.",
+    "val.inc.h4a": "Participació sense límits",
+    "val.inc.p2": "Pot participar tothom, des de l'etapa Escola fins a Juvenils, en tres modalitats: masculina, femenina i inclusiva.",
+    "val.inc.h4b": "Experiència d'elit",
+    "val.inc.p3": "Més enllà del joc, el nostre objectiu és que cada participant se senti com un futbolista d'elit: staff fotogràfic, fisioteràpia, equipament complet i la guia dels nostres coaches.",
+    "val.quote.texto": "Que gaudeixin del camí i que tinguin ganes de seguir per més, que ho sentin important, no pel nivell de joc o categoria sinó pel cor.",
+    "val.quote.autor": "— Fundador de Base Élite 17",
+    "val.cta.titulo": "Vols conèixer-nos?",
+    "val.cta.desc": "Descobreix tot el que fem a Base Élite 17 per formar els millors futbolistes.",
+    "val.cta.btn": "Veure què fem"
   },
 
   en: {
@@ -510,6 +558,7 @@ var I18N = {
     "nav.equipo": "Team",
     "nav.inscripciones": "Registration",
     "nav.ubicacion": "Location",
+    "nav.valores": "Values",
     "nav.aria": "Main navigation",
     "menu.abrir": "Open menu",
     // FOOTER
@@ -737,6 +786,29 @@ var I18N = {
     "ubi.inst.primerosaux": "First Aid",
     "ubi.inst.primerosaux.desc": "First aid kit available at every location and trained emergency personnel.",
     "ubi.inst.campo7": "Football 7 Field",
-    "ubi.inst.campo7.desc": "Football 7 field with high-quality artificial turf, ideal for technical training and tournaments."
+    "ubi.inst.campo7.desc": "Football 7 field with high-quality artificial turf, ideal for technical training and tournaments.",
+    // VALUES
+    "val.page-title": "Values & Philosophy - Base Élite 17",
+    "val.titulo": "Values & Philosophy",
+    "val.sub": "The principles that guide every decision, every training session and every relationship within Base Élite 17.",
+    "val.valores.titulo": "Our values",
+    "val.valores.sub": "Three fundamental values that guide every decision, every training session and every relationship within Base Élite 17.",
+    "val.val.unidad.titulo": "Unity",
+    "val.val.unidad.desc": "We believe in the strength of the team. Every player is a fundamental piece, and together we can achieve goals that would be impossible individually.",
+    "val.val.humildad.titulo": "Humility",
+    "val.val.humildad.desc": "Recognizing our limits is the first step to overcome them. We teach to value effort above the result.",
+    "val.val.respeto.titulo": "Respect",
+    "val.val.respeto.desc": "Respect is the foundation of everything. Towards teammates, coaches, referees, opponents and oneself.",
+    "val.inc.titulo": "Inclusion & passion for football",
+    "val.inc.p1": "At Base Élite 17, we believe football is for everyone. Our tournaments and leagues are designed to be accessible to players of all ages and levels.",
+    "val.inc.h4a": "Participation without limits",
+    "val.inc.p2": "Everyone can participate, from Youth Academy to Juniors, in three formats: men's, women's and inclusive.",
+    "val.inc.h4b": "Elite experience",
+    "val.inc.p3": "Beyond the game, our goal is for every participant to feel like an elite footballer: photography staff, physiotherapy, full equipment and the guidance of our coaches.",
+    "val.quote.texto": "Let them enjoy the journey and want to keep going for more, let them feel it's important, not for the level of play or category but for the heart.",
+    "val.quote.autor": "— Founder of Base Élite 17",
+    "val.cta.titulo": "Want to get to know us?",
+    "val.cta.desc": "Discover everything we do at Base Élite 17 to develop the best footballers.",
+    "val.cta.btn": "See what we do"
   }
 };
