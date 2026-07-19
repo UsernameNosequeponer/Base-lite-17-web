@@ -9,13 +9,11 @@
   <meta name="author" content="Base Élite 17">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.baseelite17.com/">
-  <!-- Open Graph -->
   <meta property="og:title" content="Base Élite 17 - Academia de Fútbol">
   <meta property="og:description" content="Base educativa, formativa e inclusiva para el desarrollo integral de jugadores y jugadoras de fútbol profesional.">
   <meta property="og:url" content="https://www.baseelite17.com/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_ES">
-  <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -59,14 +57,11 @@
       <nav aria-label="Navegación principal">
         <ul>
           <li><a href="index.html" class="activo" data-i18n="nav.inicio">Inicio</a></li>
-          <li><a href="programas.html" data-i18n="nav.programas">Programas</a></li>
-          <li><a href="resultados.html" data-i18n="nav.resultados">Resultados</a></li>
-          <li><a href="torneos.html" data-i18n="nav.torneos">Torneos</a></li>
+          <li><a href="que-hacemos.html" data-i18n="nav.que-hacemos">Qué hacemos</a></li>
+          <li><a href="como-trabajamos.html" data-i18n="nav.como-trabajamos">Cómo trabajamos</a></li>
+          <li><a href="equipo.html" data-i18n="nav.equipo">Equipo</a></li>
           <li><a href="inscripciones.html" data-i18n="nav.inscripciones">Inscripciones</a></li>
           <li><a href="ubicacion.html" data-i18n="nav.ubicacion">Ubicación</a></li>
-          <li><a href="sobre-nosotros.html" data-i18n="nav.sobre">Sobre Nosotros</a></li>
-          <li><a href="staff.html" data-i18n="nav.staff">Staff</a></li>
-          <li><a href="#contacto" data-i18n="nav.contacto">Contacto</a></li>
         </ul>
       </nav>
       <div class="lang-selector" role="navigation" aria-label="Selector de idioma">
@@ -89,119 +84,53 @@
     <section class="hero">
       <div class="container hero-contenido">
         <img src="Logo.png" alt="" class="hero-logo" width="120" height="120">
-        <h1>Base Élite 17</h1>
-        <p class="hero-subtitulo" data-i18n="index.hero.sub">Tu futuro en el fútbol comienza aquí</p>
-        <p class="hero-descripcion" data-i18n="index.hero.desc">Base educativa, formativa e inclusiva para el desarrollo integral de jugadores y jugadoras de fútbol profesional. Tecnificaciones, entrenamientos personalizados y torneos de élite.</p>
+        <h1 data-i18n="index.hero.titulo">Formamos futbolistas. Y personas.</h1>
+        <p class="hero-subtitulo" data-i18n="index.hero.sub">Base educativa, formativa e inclusiva</p>
+        <p class="hero-descripcion" data-i18n="index.hero.desc">En Base Élite 17 desarrollamos el talento de cada jugador dentro y fuera del campo. Tecnificaciones, entrenamiento especializado y torneos de élite en Santa Eulàlia de Ronçana.</p>
         <div>
-          <a href="#servicios" class="boton boton-dorado" data-i18n="index.hero.cta1">Descubrir qué ofrecemos</a>
+          <a href="que-hacemos.html" class="boton boton-dorado" data-i18n="index.hero.cta1">Descubrir qué hacemos</a>
           <a href="inscripciones.html" class="boton boton-dorado" data-i18n="index.hero.cta3">Inscribirse</a>
           <a href="#contacto" class="boton boton-borde" data-i18n="index.hero.cta2">Contactar</a>
         </div>
       </div>
     </section>
 
-    <!-- SERVICIOS -->
     <section id="servicios" class="gris">
       <div class="container">
-        <h2 class="seccion-titulo" data-i18n="index.serv.titulo">¿Qué ofrecemos?</h2>
-        <p class="seccion-subtitulo" data-i18n="index.serv.sub">Programas diseñados para potenciar el talento de cada jugador y jugadora, adaptándonos a sus necesidades individuales.</p>
+        <h2 class="seccion-titulo" data-i18n="index.serv.titulo">¿Qué hacemos?</h2>
+        <p class="seccion-subtitulo" data-i18n="index.serv.sub">Dos pilares que definen nuestra metodología y que marcan la diferencia en el desarrollo de cada jugador y jugadora.</p>
 
-        <div class="servicios-grid">
+        <div class="servicios-grid" style="grid-template-columns: repeat(2, 1fr);">
 
-          <div class="servicio-card" data-modal="modal-tecnificacion" tabindex="0" role="button" aria-describedby="desc-tecnificacion">
+          <a href="que-hacemos.html" class="servicio-card" style="text-decoration:none;">
             <div class="servicio-imagen">
-              <img src="imagenes/tecnificacion.jpg" alt="Sesión de tecnificación con jóvenes jugadores" loading="lazy" width="400" height="300">
+              <img src="imagenes/tecnificacion.jpg" alt="Tecnificaciones y torneos" loading="lazy" width="400" height="300">
             </div>
             <div class="servicio-info">
-              <h3 data-i18n="index.serv.tech.titulo">Tecnificaciones</h3>
-              <p id="desc-tecnificacion" data-i18n="index.serv.tech.desc">Entrenamientos especializados para la mejora de la técnica individual y colectiva durante todo el año.</p>
-              <span class="servicio-enlace" data-i18n="index.serv.mas">Más información →</span>
+              <h3 data-i18n="index.serv.tech.titulo">Tecnificaciones y Torneos</h3>
+              <p data-i18n="index.serv.tech.desc">Entrenamientos especializados durante todo el año y competición en los torneos más prestigiosos de Catalunya.</p>
+              <span class="servicio-enlace" data-i18n="index.serv.mas">Ver más →</span>
             </div>
-          </div>
+          </a>
 
-          <div class="servicio-card" data-modal="modal-entrenamiento" tabindex="0" role="button" aria-describedby="desc-entrenamiento">
+          <a href="como-trabajamos.html" class="servicio-card" style="text-decoration:none;">
             <div class="servicio-imagen">
-              <img src="imagenes/entrenamiento.jpg" alt="Entrenamiento personalizado en campo" loading="lazy" width="400" height="300">
+              <img src="imagenes/mejora.jpg" alt="Metodología y coaching" loading="lazy" width="400" height="300">
             </div>
             <div class="servicio-info">
-              <h3 data-i18n="index.serv.ent.titulo">Entrenamientos personalizados</h3>
-              <p id="desc-entrenamiento" data-i18n="index.serv.ent.desc">Planes a medida según el nivel, la posición y los objetivos de cada jugador o jugadora.</p>
-              <span class="servicio-enlace" data-i18n="index.serv.mas">Más información →</span>
+              <h3 data-i18n="index.serv.met.titulo">Metodología y Coaching</h3>
+              <p data-i18n="index.serv.met.desc">Mejora continua con coaching deportivo, seguimiento individualizado y desarrollo integral de cada persona.</p>
+              <span class="servicio-enlace" data-i18n="index.serv.mas">Ver más →</span>
             </div>
-          </div>
-
-          <div class="servicio-card" data-modal="modal-torneos" tabindex="0" role="button" aria-describedby="desc-torneos">
-            <div class="servicio-imagen">
-              <img src="imagenes/torneos.jpg" alt="Equipo en competición de torneo" loading="lazy" width="400" height="300">
-            </div>
-            <div class="servicio-info">
-              <h3 data-i18n="index.serv.tor.titulo">Torneos</h3>
-              <p id="desc-torneos" data-i18n="index.serv.tor.desc">Competición de alto nivel en las modalidades masculina, femenina e inclusiva.</p>
-              <span class="servicio-enlace" data-i18n="index.serv.mas">Más información →</span>
-            </div>
-          </div>
+          </a>
 
         </div>
       </div>
     </section>
 
-    <!-- MODAL TECNIFICACIÓN -->
-    <div class="modal-overlay" id="modal-tecnificacion" role="dialog" aria-modal="true" aria-labelledby="modal-tecnificacion-titulo">
-      <div class="modal-contenido">
-        <button class="modal-cerrar" aria-label="Cerrar modal" data-i18n-aria="modal.cerrar">&times;</button>
-        <h2 id="modal-tecnificacion-titulo" data-i18n="index.modal.tech.titulo">Tecnificaciones</h2>
-        <p data-i18n="index.modal.tech.p1">Entrenamientos especializados centrados en la mejora de la técnica individual y colectiva. Trabajamos control de balón, pase, tiro, conducción y toma de decisiones en situaciones reales de partido.</p>
-        <ul>
-          <li data-i18n="index.modal.tech.l1">Entrenamientos durante todo el año</li>
-          <li data-i18n="index.modal.tech.l2">Grupos reducidos por nivel y edad</li>
-          <li data-i18n="index.modal.tech.l3">Seguimiento individualizado del progreso</li>
-          <li data-i18n="index.modal.tech.l4">Staff especializado en todas las posiciones</li>
-          <li data-i18n="index.modal.tech.l5">Evaluaciones periódicas de rendimiento</li>
-        </ul>
-        <p><strong data-i18n="index.modal.tech.dir">Dirigido a:</strong> <span data-i18n="index.modal.tech.dir.txt">Desde escuela hasta juveniles. Masculina, femenina e inclusiva.</span></p>
-      </div>
-    </div>
-
-    <!-- MODAL ENTRENAMIENTO PERSONALIZADO -->
-    <div class="modal-overlay" id="modal-entrenamiento" role="dialog" aria-modal="true" aria-labelledby="modal-entrenamiento-titulo">
-      <div class="modal-contenido">
-        <button class="modal-cerrar" aria-label="Cerrar modal" data-i18n-aria="modal.cerrar">&times;</button>
-        <h2 id="modal-entrenamiento-titulo" data-i18n="index.modal.ent.titulo">Entrenamientos personalizados</h2>
-        <p data-i18n="index.modal.ent.p1">Cada persona es diferente, por eso diseñamos planes a medida. Analizamos tus puntos fuertes y áreas de mejora para crear un programa que se adapte a ti.</p>
-        <ul>
-          <li data-i18n="index.modal.ent.l1">Plan de entrenamiento individual</li>
-          <li data-i18n="index.modal.ent.l2">Entrenador asignado según perfil y necesidades</li>
-          <li data-i18n="index.modal.ent.l3">Preparación física específica</li>
-          <li data-i18n="index.modal.ent.l4">Entrenamiento de porteros y porteras con especialistas</li>
-          <li data-i18n="index.modal.ent.l5">Sesiones individuales o en grupo reducido</li>
-          <li data-i18n="index.modal.ent.l6">Seguimiento y ajuste continuo del plan</li>
-        </ul>
-        <p><strong data-i18n="index.modal.ent.dir">Dirigido a:</strong> <span data-i18n="index.modal.ent.dir.txt">Cualquier nivel, desde iniciación hasta competición.</span></p>
-      </div>
-    </div>
-
-    <!-- MODAL TORNEOS -->
-    <div class="modal-overlay" id="modal-torneos" role="dialog" aria-modal="true" aria-labelledby="modal-torneos-titulo">
-      <div class="modal-contenido">
-        <button class="modal-cerrar" aria-label="Cerrar modal" data-i18n-aria="modal.cerrar">&times;</button>
-        <h2 id="modal-torneos-titulo" data-i18n="index.modal.tor.titulo">Torneos</h2>
-        <p data-i18n="index.modal.tor.p1">Participamos en los torneos más prestigiosos de Catalunya. Los equipos se forman según el nivel de cada jugador para garantizar una competición equilibrada y formativa.</p>
-        <ul>
-          <li data-i18n="index.modal.tor.l1">Competición de alto nivel</li>
-          <li data-i18n="index.modal.tor.l2">Equipos de 10 jugadores y jugadoras por categoría</li>
-          <li data-i18n="index.modal.tor.l3">Staff completo: fotografía, fisioterapia y coachs</li>
-          <li data-i18n="index.modal.tor.l4">Modalidades: masculina, femenina e inclusiva</li>
-          <li data-i18n="index.modal.tor.l5">Categorías: desde Escuela hasta Juveniles</li>
-          <li data-i18n="index.modal.tor.l6">Experiencia de élite completa</li>
-        </ul>
-        <p><strong data-i18n="index.modal.tor.insc">Inscripción:</strong> <a href="mailto:baseelite17@gmail.com">baseelite17@gmail.com</a></p>
-      </div>
-    </div>
-
-    <!-- TODO LO QUE DEBES SABER -->
     <section id="saber" class="gris">
       <div class="container">
-        <h2 class="seccion-titulo" data-i18n="index.saber.titulo">Todo lo que debes saber de Base Élite 17</h2>
+        <h2 class="seccion-titulo" data-i18n="index.saber.titulo">Lo que nos define</h2>
         <p class="seccion-subtitulo" data-i18n="index.saber.sub">Valores, filosofía y compromiso que definen nuestro proyecto.</p>
 
         <div class="carousel-3d-wrapper" data-i18n-aria="index.saber.aria" aria-label="Carrusel informativo sobre Base Élite 17">
@@ -277,27 +206,38 @@
       </div>
     </section>
 
-    <!-- OPINIONES -->
-    <section class="dorado">
+    <section class="opiniones-section">
       <div class="container">
         <h2 class="seccion-titulo" data-i18n="index.opiniones.titulo">Opiniones</h2>
-        <blockquote>
-          <p data-i18n="index.opiniones.texto">&ldquo;Baseelite17 ha transformado la forma en que mis hijos ven el fútbol. El valor de ser un equipo y la calidad de los entrenamientos son inigualables. ¡Realmente una base para el éxito!&rdquo;</p>
-        </blockquote>
-        <p class="autor" data-i18n="index.opiniones.autor">— Familia Torres, padres de jugadores BE17</p>
+        <div class="opiniones-grid">
+          <blockquote class="opinion-card">
+            <p data-i18n="index.opiniones.texto">&ldquo;Base Élite 17 ha transformado la forma en que mis hijos ven el fútbol. El valor de ser un equipo y la calidad de los entrenamientos son inigualables.&rdquo;</p>
+            <p class="autor" data-i18n="index.opiniones.autor">— Familia Torres, padres de jugadores BE17</p>
+          </blockquote>
+          <blockquote class="opinion-card">
+            <p data-i18n="index.opiniones2.texto">&ldquo;La inclusión y el respeto se notan en cada entrenamiento. Mis hijos han crecido como personas y como futbolistas.&rdquo;</p>
+            <p class="autor" data-i18n="index.opiniones2.autor">— María G., madre de jugador BE17</p>
+          </blockquote>
+        </div>
       </div>
     </section>
 
-    <!-- CONTACTO -->
+    <section class="staff-preview-section gris">
+      <div class="container" style="text-align:center;">
+        <h2 class="seccion-titulo" data-i18n="index.staff.titulo">Nuestro equipo</h2>
+        <p class="seccion-subtitulo" data-i18n="index.staff.sub">Entrenadores con formación internacional y décadas de experiencia. Conoce al equipo que hará crecer a tu hijo o hija.</p>
+        <a href="equipo.html" class="boton boton-dorado" data-i18n="index.staff.btn">Ver al equipo completo</a>
+      </div>
+    </section>
+
     <section id="contacto">
       <div class="container">
         <h2 class="seccion-titulo" data-i18n="index.contacto.titulo">Contacto</h2>
         <div class="grid-2">
           <div class="contacto-bloque">
-            <h3 data-i18n="index.contacto.ubi">Ubicaciones</h3>
-            <p>Camp Municipal de Corrà d'Avall, 08520</p>
-            <p>Camp de Futbol 7 Bellavista, 08521</p>
-            <p>Santa Eulàlia de Ronçana, 08187</p>
+            <h3 data-i18n="index.contacto.ubi">Sede principal</h3>
+            <p><strong>Camp de Futbol 7 Bellavista</strong></p>
+            <p>Santa Eulàlia de Ronçana, Barcelona</p>
           </div>
           <div class="contacto-bloque">
             <h3 data-i18n="index.contacto.horario">Horario de atención</h3>
@@ -332,14 +272,11 @@
         <h4 data-i18n="footer.enlaces">Enlaces</h4>
         <ul>
           <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
-          <li><a href="programas.html" data-i18n="nav.programas">Programas</a></li>
-          <li><a href="resultados.html" data-i18n="nav.resultados">Resultados</a></li>
-          <li><a href="torneos.html" data-i18n="nav.torneos">Torneos</a></li>
+          <li><a href="que-hacemos.html" data-i18n="nav.que-hacemos">Qué hacemos</a></li>
+          <li><a href="como-trabajamos.html" data-i18n="nav.como-trabajamos">Cómo trabajamos</a></li>
+          <li><a href="equipo.html" data-i18n="nav.equipo">Equipo</a></li>
           <li><a href="inscripciones.html" data-i18n="nav.inscripciones">Inscripciones</a></li>
           <li><a href="ubicacion.html" data-i18n="nav.ubicacion">Ubicación</a></li>
-          <li><a href="sobre-nosotros.html" data-i18n="nav.sobre">Sobre Nosotros</a></li>
-          <li><a href="staff.html" data-i18n="nav.staff">Staff</a></li>
-          <li><a href="#contacto" data-i18n="nav.contacto">Contacto</a></li>
         </ul>
       </div>
       <div>
@@ -355,6 +292,10 @@
       <p data-i18n="footer.copyright">&copy; 2026 Base Élite 17. Todos los derechos reservados.</p>
     </div>
   </footer>
+
+  <a href="https://api.whatsapp.com/send?phone=637333505" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.132 6.744 3.054 9.374L1.054 31.25l6.118-1.97A15.907 15.907 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.31 22.59c-.39 1.09-1.932 2.006-3.164 2.27-.84.18-1.936.324-5.626-1.206-4.726-1.956-7.766-6.77-7.996-7.08-.224-.31-1.86-2.476-1.86-4.724s1.18-3.354 1.6-3.82c.39-.466.92-.62 1.226-.62.3 0 .596.002.856.016.274.012.64-.104.996.762.39.948 1.33 3.24 1.446 3.472.116.232.194.504.038.814-.156.31-.292.5-.584.77-.292.27-.576.534-.866.856-.264.292-.54.604-.228.954.312.35 1.384 1.986 2.97 3.216 2.038 1.584 3.62 2.126 4.284 2.354.664.228.842.114 1.152-.256.31-.37 1.324-1.542 1.678-2.076.35-.534.702-.444 1.188-.266.49.18 3.12 1.468 3.656 1.734.536.266.894.398 1.024.62.13.224.13 1.29-.26 2.38z"/></svg>
+  </a>
 
   <script src="i18n.js"></script>
   <script src="script.js"></script>

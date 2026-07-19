@@ -1288,6 +1288,92 @@ footer a:hover {
   }
 }
 
+/* ===== WHATSAPP FLOATING BUTTON ===== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .whatsapp-float {
+    width: 52px;
+    height: 52px;
+    bottom: 1rem;
+    right: 1rem;
+  }
+  .whatsapp-float svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* ===== OPINIONES GRID ===== */
+.opiniones-section {
+  background: #c6b342;
+  color: #000;
+}
+
+.opiniones-section .seccion-titulo {
+  color: #000;
+}
+
+.opiniones-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.opinion-card {
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  border: none;
+}
+
+.opinion-card p {
+  color: #222;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.opinion-card .autor {
+  color: #444;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-top: 0.75rem;
+}
+
+.staff-preview-section {
+  padding: 5rem 0;
+}
+
+@media (max-width: 960px) {
+  .opiniones-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

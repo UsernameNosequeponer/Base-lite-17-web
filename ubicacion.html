@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title data-i18n="ubi.page-title">Ubicación - Base Élite 17 | Nuestras Instalaciones</title>
-  <meta name="description" content="Encuentra las instalaciones de Base Élite 17: Camp Municipal de Corrà d'Avall, Camp de Futbol 7 Bellavista y Santa Eulàlia de Ronçana. Vestuarios, duchas y acceso fácil.">
-  <meta name="keywords" content="ubicación, sede, campo, instalaciones, Corrà d'Avall, Bellavista, Santa Eulàlia, Base Élite 17">
+  <meta name="description" content="Encuentra las instalaciones de Base Élite 17: Camp de Futbol 7 Bellavista como sede principal, con vestuarios, duchas y acceso fácil.">
+  <meta name="keywords" content="ubicación, sede, campo, instalaciones, Bellavista, Santa Eulàlia, Base Élite 17">
   <meta name="author" content="Base Élite 17">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.baseelite17.com/ubicacion.html">
@@ -35,7 +35,7 @@
     }
     .sede-info {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
       margin-top: 2rem;
     }
@@ -46,6 +46,10 @@
       padding: 2rem;
       text-align: center;
       transition: border-color 0.3s, transform 0.3s;
+    }
+    .sede-card.sede-destacada {
+      border-color: #c6b342;
+      border-width: 2px;
     }
     .sede-card:hover {
       border-color: #c6b342;
@@ -67,9 +71,19 @@
       font-weight: 500;
       margin-bottom: 1rem;
     }
+    .sede-badge {
+      display: inline-block;
+      background: #c6b342;
+      color: #000;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
     .instalaciones-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
       margin-top: 2rem;
     }
@@ -126,14 +140,11 @@
       <nav aria-label="Navegación principal">
         <ul>
           <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
-          <li><a href="programas.html" data-i18n="nav.programas">Programas</a></li>
-          <li><a href="resultados.html" data-i18n="nav.resultados">Resultados</a></li>
-          <li><a href="torneos.html" data-i18n="nav.torneos">Torneos</a></li>
+          <li><a href="que-hacemos.html" data-i18n="nav.que-hacemos">Qué hacemos</a></li>
+          <li><a href="como-trabajamos.html" data-i18n="nav.como-trabajamos">Cómo trabajamos</a></li>
+          <li><a href="equipo.html" data-i18n="nav.equipo">Equipo</a></li>
           <li><a href="inscripciones.html" data-i18n="nav.inscripciones">Inscripciones</a></li>
           <li><a href="ubicacion.html" class="activo" data-i18n="nav.ubicacion">Ubicación</a></li>
-          <li><a href="sobre-nosotros.html" data-i18n="nav.sobre">Sobre Nosotros</a></li>
-          <li><a href="staff.html" data-i18n="nav.staff">Staff</a></li>
-          <li><a href="index.html#contacto" data-i18n="nav.contacto">Contacto</a></li>
         </ul>
       </nav>
       <div class="lang-selector" role="navigation" aria-label="Selector de idioma">
@@ -156,37 +167,31 @@
     <section class="pagina-header gris">
       <div class="container">
         <h1 class="seccion-titulo" data-i18n="ubi.titulo">Nuestras Instalaciones</h1>
-        <p class="seccion-subtitulo" data-i18n="ubi.sub">Tres ubicaciones en la zona de Barcelona para que elijas la que mejor se adapte a ti. Todos nuestros campos cuentan con las mejores instalaciones.</p>
+        <p class="seccion-subtitulo" data-i18n="ubi.sub">Sede principal en Camp de Futbol 7 Bellavista. Instalaciones diseñadas para el máximo rendimiento de cada jugador y jugadora.</p>
       </div>
     </section>
 
     <section class="gris" style="padding-top:0;">
       <div class="container">
         <div class="mapa-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59845.46!2d2.15!3d41.62!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49e0b7e7b7b7b%3A0x7b7b7b7b7b7b7b7b!2sSanta%20Eul%C3%A0lia%20de%20Ron%C3%A7ana%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de ubicaciones de Base Élite 17"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2983.5!2d2.18!3d41.62!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4b0c0b0b0b0b0%3A0x0b0b0b0b0b0b0b0b!2sBellavista%2C%20Santa%20Eul%C3%A0lia%20de%20Ron%C3%A7ana!5e0!3m2!1ses!2ses!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de ubicaciones de Base Élite 17"></iframe>
         </div>
 
         <div class="sede-info">
 
+          <div class="sede-card sede-destacada">
+            <span class="sede-badge" data-i18n="ubi.principal">Sede principal</span>
+            <h3 data-i18n="ubi.campo2.titulo">Camp de Futbol 7 Bellavista</h3>
+            <p class="sede-direccion">Santa Eulàlia de Ronçana, Barcelona</p>
+            <p data-i18n="ubi.campo2.desc">Nuestra sede principal. Campo de fútbol 7 donde se realizan todos los entrenamientos de tecnificación, sesiones personalizadas y torneos.</p>
+            <p><strong data-i18n="ubi.campo2.uso">Uso:</strong> <span data-i18n="ubi.campo2.uso.txt">Entrenamientos, tecnificación y torneos</span></p>
+          </div>
+
           <div class="sede-card">
             <h3 data-i18n="ubi.campo1.titulo">Camp Municipal de Corrà d'Avall</h3>
             <p class="sede-direccion">08520, Barcelona</p>
-            <p data-i18n="ubi.campo1.desc">Campo principal de nuestra academia. Superficie de césped natural con iluminación artificial para entrenamientos vespertinos.</p>
+            <p data-i18n="ubi.campo1.desc">Campo auxiliar para entrenamientos y competiciones. Superficie de césped natural con iluminación artificial.</p>
             <p><strong data-i18n="ubi.campo1.uso">Uso:</strong> <span data-i18n="ubi.campo1.uso.txt">Entrenamientos y torneos oficiales</span></p>
-          </div>
-
-          <div class="sede-card">
-            <h3 data-i18n="ubi.campo2.titulo">Camp de Futbol 7 Bellavista</h3>
-            <p class="sede-direccion">08521, Barcelona</p>
-            <p data-i18n="ubi.campo2.desc">Campo de fútbol 7 ideal para sesiones de tecnificación y entrenamientos personalizados en grupos reducidos.</p>
-            <p><strong data-i18n="ubi.campo2.uso">Uso:</strong> <span data-i18n="ubi.campo2.uso.txt">Tecnificación y entrenamiento personalizado</span></p>
-          </div>
-
-          <div class="sede-card">
-            <h3 data-i18n="ubi.campo3.titulo">Santa Eulàlia de Ronçana</h3>
-            <p class="sede-direccion">08187, Barcelona</p>
-            <p data-i18n="ubi.campo3.desc">Nuestra sede en Santa Eulàlia. Campo polideportivo con acceso fácil desde la autovía y aparcamiento amplio.</p>
-            <p><strong data-i18n="ubi.campo3.uso">Uso:</strong> <span data-i18n="ubi.campo3.uso.txt">Clases y eventos especiales</span></p>
           </div>
 
         </div>
@@ -241,10 +246,10 @@
           </div>
 
           <div class="instalacion-item">
-            <div class="instalacion-icono">🚌</div>
+            <div class="instalacion-icono">⚽</div>
             <div class="instalacion-texto">
-              <h4 data-i18n="ubi.inst.acceso">Acceso Fácil</h4>
-              <p data-i18n="ubi.inst.acceso.desc">Todos los campos tienen acceso en coche y transporte público. Fácil llegada desde Barcelona.</p>
+              <h4 data-i18n="ubi.inst.campo7">Campo de Fútbol 7</h4>
+              <p data-i18n="ubi.inst.campo7.desc">Campo de fútbol 7 con césped artificial de alta calidad, ideal para entrenamientos de tecnología y torneos.</p>
             </div>
           </div>
 
@@ -264,14 +269,11 @@
         <h4 data-i18n="footer.enlaces">Enlaces</h4>
         <ul>
           <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
-          <li><a href="programas.html" data-i18n="nav.programas">Programas</a></li>
-          <li><a href="resultados.html" data-i18n="nav.resultados">Resultados</a></li>
-          <li><a href="torneos.html" data-i18n="nav.torneos">Torneos</a></li>
+          <li><a href="que-hacemos.html" data-i18n="nav.que-hacemos">Qué hacemos</a></li>
+          <li><a href="como-trabajamos.html" data-i18n="nav.como-trabajamos">Cómo trabajamos</a></li>
+          <li><a href="equipo.html" data-i18n="nav.equipo">Equipo</a></li>
           <li><a href="inscripciones.html" data-i18n="nav.inscripciones">Inscripciones</a></li>
           <li><a href="ubicacion.html" data-i18n="nav.ubicacion">Ubicación</a></li>
-          <li><a href="sobre-nosotros.html" data-i18n="nav.sobre">Sobre Nosotros</a></li>
-          <li><a href="staff.html" data-i18n="nav.staff">Staff</a></li>
-          <li><a href="index.html#contacto" data-i18n="nav.contacto">Contacto</a></li>
         </ul>
       </div>
       <div>
@@ -287,6 +289,10 @@
       <p data-i18n="footer.copyright">&copy; 2026 Base Élite 17. Todos los derechos reservados.</p>
     </div>
   </footer>
+
+  <a href="https://api.whatsapp.com/send?phone=637333505" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.132 6.744 3.054 9.374L1.054 31.25l6.118-1.97A15.907 15.907 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.31 22.59c-.39 1.09-1.932 2.006-3.164 2.27-.84.18-1.936.324-5.626-1.206-4.726-1.956-7.766-6.77-7.996-7.08-.224-.31-1.86-2.476-1.86-4.724s1.18-3.354 1.6-3.82c.39-.466.92-.62 1.226-.62.3 0 .596.002.856.016.274.012.64-.104.996.762.39.948 1.33 3.24 1.446 3.472.116.232.194.504.038.814-.156.31-.292.5-.584.77-.292.27-.576.534-.866.856-.264.292-.54.604-.228.954.312.35 1.384 1.986 2.97 3.216 2.038 1.584 3.62 2.126 4.284 2.354.664.228.842.114 1.152-.256.31-.37 1.324-1.542 1.678-2.076.35-.534.702-.444 1.188-.266.49.18 3.12 1.468 3.656 1.734.536.266.894.398 1.024.62.13.224.13 1.29-.26 2.38z"/></svg>
+  </a>
 
   <script src="i18n.js"></script>
   <script src="script.js"></script>
