@@ -57,14 +57,63 @@
 
   <main id="contenido">
 
-    <section class="pagina-header gris">
+    <section class="pagina-header gris" style="background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('imagenes/torneo-elite.jpg'); background-size: cover; background-position: center;">
       <div class="container">
         <h1 class="seccion-titulo" data-i18n="qh.titulo">Qué hacemos</h1>
         <p class="seccion-subtitulo" data-i18n="qh.sub">Tecnificaciones, entrenamiento especializado y torneos de élite. Todo lo que necesitan tus hijos para crecer como futbolistas y como personas.</p>
       </div>
     </section>
 
-    <section id="tecnificaciones" class="gris" style="padding-top:2rem;">
+    <section id="torneos" class="torneos-hero-section" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('imagenes/torneos.jpg'); background-size: cover; background-position: center;">
+      <div class="container">
+        <h2 class="seccion-titulo" data-i18n="qh.tor.titulo">Torneos y Competición</h2>
+        <p class="seccion-subtitulo" data-i18n="qh.tor.sub">Participamos en los torneos más prestigiosos de Catalunya. Equipos formados según el nivel para una competición equilibrada y formativa.</p>
+
+        <div class="torneos-grid">
+          <div class="torneo-card">
+            <img src="imagenes/torneo-elite.jpg" alt="Torneo de élite" class="torneo-img" loading="lazy" width="400" height="300">
+            <h3 data-i18n="qh.tor.elite.titulo">Torneos de élite</h3>
+            <p data-i18n="qh.tor.elite.desc">Los torneos más prestigiosos de Catalunya durante todo el año. Selecciones cuidadosas de 10 jugadores/as por categoría.</p>
+          </div>
+
+          <div class="torneo-card">
+            <img src="imagenes/competicion.jpg" alt="Competición" class="torneo-img" loading="lazy" width="400" height="300">
+            <h3 data-i18n="qh.tor.alto.titulo">Alto nivel</h3>
+            <p data-i18n="qh.tor.alto.desc">Nuestros equipos participan en competiciones donde el desafío y la emoción están garantizados.</p>
+          </div>
+
+          <div class="torneo-card">
+            <img src="imagenes/inclusion-torneo.jpg" alt="Torneo inclusivo" class="torneo-img" loading="lazy" width="400" height="300">
+            <h3 data-i18n="qh.tor.inc.titulo">Modalidades inclusivas</h3>
+            <p data-i18n="qh.tor.inc.desc">Masculina, femenina e inclusiva. Fútbol para todos sin barreras de género, nivel o procedencia.</p>
+          </div>
+
+          <div class="torneo-card">
+            <img src="imagenes/seleccion.jpg" alt="Selección por nivel" class="torneo-img" loading="lazy" width="400" height="300">
+            <h3 data-i18n="qh.tor.sel.titulo">Selección por nivel</h3>
+            <p data-i18n="qh.tor.sel.desc">Formamos equipos competitivos garantizando un nivel óptimo para cada torneo y cada jugador.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="torneos-inclusion-section" style="background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('imagenes/seleccion.jpg'); background-size: cover; background-position: center;">
+      <div class="container">
+        <div class="torneos-inclusion">
+          <img src="imagenes/inclusion-torneo.jpg" alt="Equipo inclusivo celebrando" class="inclusion-img" loading="lazy" width="400" height="400">
+          <div>
+            <h3 data-i18n="qh.inc.titulo">Inclusión y pasión por el fútbol</h3>
+            <p data-i18n="qh.inc.p1">En Base Élite 17, creemos que el fútbol es para todos. Nuestros torneos y ligas están diseñados para ser accesibles a jugadores y jugadoras de todas las edades y niveles.</p>
+            <h4 data-i18n="qh.inc.h4a">Participación sin límites</h4>
+            <p data-i18n="qh.inc.p2">Puede participar todo el mundo, desde la etapa Escuela hasta Juveniles, en tres modalidades: masculina, femenina e inclusiva.</p>
+            <h4 data-i18n="qh.inc.h4b">Experiencia de élite</h4>
+            <p data-i18n="qh.inc.p3">Más allá del juego, nuestro objetivo es que cada participante se sienta como un futbolista de élite: staff fotográfico, fisioterapia, equipamiento completo y la guía de nuestros coaches.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tecnificaciones" class="gris" style="background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('imagenes/entrenamiento.jpg'); background-size: cover; background-position: center; padding-top:2rem;">
       <div class="container">
         <h2 class="seccion-titulo" data-i18n="qh.tech.titulo">Tecnificaciones</h2>
         <p class="seccion-subtitulo" data-i18n="qh.tech.sub">Entrenamientos especializados para potenciar la técnica individual y colectiva. Trabajamos los fundamentos del fútbol de forma continua durante todo el año.</p>
@@ -152,55 +201,6 @@
         <p><strong data-i18n="prog.modal.port.dir">Dirigido a:</strong> <span data-i18n="prog.modal.port.dir.txt">Todas las edades y niveles.</span></p>
       </div>
     </div>
-
-    <section id="torneos">
-      <div class="container">
-        <h2 class="seccion-titulo" data-i18n="qh.tor.titulo">Torneos y Competición</h2>
-        <p class="seccion-subtitulo" data-i18n="qh.tor.sub">Participamos en los torneos más prestigiosos de Catalunya. Equipos formados según el nivel para una competición equilibrada y formativa.</p>
-
-        <div class="torneos-grid">
-          <div class="torneo-card">
-            <img src="imagenes/torneo-elite.jpg" alt="Torneo de élite" class="torneo-img" loading="lazy" width="400" height="300">
-            <h3 data-i18n="qh.tor.elite.titulo">Torneos de élite</h3>
-            <p data-i18n="qh.tor.elite.desc">Los torneos más prestigiosos de Catalunya durante todo el año. Selecciones cuidadosas de 10 jugadores/as por categoría.</p>
-          </div>
-
-          <div class="torneo-card">
-            <img src="imagenes/competicion.jpg" alt="Competición" class="torneo-img" loading="lazy" width="400" height="300">
-            <h3 data-i18n="qh.tor.alto.titulo">Alto nivel</h3>
-            <p data-i18n="qh.tor.alto.desc">Nuestros equipos participan en competiciones donde el desafío y la emoción están garantizados.</p>
-          </div>
-
-          <div class="torneo-card">
-            <img src="imagenes/inclusion-torneo.jpg" alt="Torneo inclusivo" class="torneo-img" loading="lazy" width="400" height="300">
-            <h3 data-i18n="qh.tor.inc.titulo">Modalidades inclusivas</h3>
-            <p data-i18n="qh.tor.inc.desc">Masculina, femenina e inclusiva. Fútbol para todos sin barreras de género, nivel o procedencia.</p>
-          </div>
-
-          <div class="torneo-card">
-            <img src="imagenes/seleccion.jpg" alt="Selección por nivel" class="torneo-img" loading="lazy" width="400" height="300">
-            <h3 data-i18n="qh.tor.sel.titulo">Selección por nivel</h3>
-            <p data-i18n="qh.tor.sel.desc">Formamos equipos competitivos garantizando un nivel óptimo para cada torneo y cada jugador.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="torneos-inclusion-section">
-      <div class="container">
-        <div class="torneos-inclusion">
-          <img src="imagenes/inclusion-torneo.jpg" alt="Equipo inclusivo celebrando" class="inclusion-img" loading="lazy" width="400" height="400">
-          <div>
-            <h3 data-i18n="qh.inc.titulo">Inclusión y pasión por el fútbol</h3>
-            <p data-i18n="qh.inc.p1">En Base Élite 17, creemos que el fútbol es para todos. Nuestros torneos y ligas están diseñados para ser accesibles a jugadores y jugadoras de todas las edades y niveles.</p>
-            <h4 data-i18n="qh.inc.h4a">Participación sin límites</h4>
-            <p data-i18n="qh.inc.p2">Puede participar todo el mundo, desde la etapa Escuela hasta Juveniles, en tres modalidades: masculina, femenina e inclusiva.</p>
-            <h4 data-i18n="qh.inc.h4b">Experiencia de élite</h4>
-            <p data-i18n="qh.inc.p3">Más allá del juego, nuestro objetivo es que cada participante se sienta como un futbolista de élite: staff fotográfico, fisioterapia, equipamiento completo y la guía de nuestros coaches.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section class="dorado">
       <div class="container" style="text-align:center;">

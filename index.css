@@ -1329,9 +1329,9 @@ footer a:hover {
 /* ===== LANDING 2-COL GRID ===== */
 .landing-grid-2 {
   grid-template-columns: repeat(2, 1fr);
+  width: 100%;
   max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 /* ===== OPINIONES GRID ===== */
