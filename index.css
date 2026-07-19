@@ -1134,15 +1134,20 @@ footer a:hover {
   .staff-tags { justify-content: center; }
 
   /* Mobile-only backgrounds */
-  .bg-mobile-01 {
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('imagenes/mejora.jpg');
+  .bg-mobile-01,
+  .bg-mobile-02 {
     background-size: cover;
     background-position: center;
   }
+  .bg-mobile-01 {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('imagenes/mejora.jpg');
+  }
   .bg-mobile-02 {
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('imagenes/desarrollo.jpg');
-    background-size: cover;
-    background-position: center;
+  }
+  .bg-mobile-01 .resultado-full-img,
+  .bg-mobile-02 .resultado-full-img {
+    display: none;
   }
 
   nav ul {
