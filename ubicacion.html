@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="ubi.page-title">Ubicación - Base Élite 17 | Nuestras Instalaciones</title>
+  <meta name="description" content="Encuentra las instalaciones de Base Élite 17: Camp Municipal de Corrà d'Avall, Camp de Futbol 7 Bellavista y Santa Eulàlia de Ronçana. Vestuarios, duchas y acceso fácil.">
+  <meta name="keywords" content="ubicación, sede, campo, instalaciones, Corrà d'Avall, Bellavista, Santa Eulàlia, Base Élite 17">
+  <meta name="author" content="Base Élite 17">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.baseelite17.com/ubicacion.html">
+  <meta property="og:title" content="Ubicación - Base Élite 17">
+  <meta property="og:description" content="Encuentra nuestras instalaciones: campos de fútbol con vestuarios, duchas y fácil acceso.">
+  <meta property="og:url" content="https://www.baseelite17.com/ubicacion.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="Logo.png" type="image/png">
+  <link rel="stylesheet" href="index.css">
+  <style>
+    .mapa-container {
+      width: 100%;
+      height: 450px;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      border: 2px solid #3a3a3a;
+      margin-bottom: 2rem;
+    }
+    .mapa-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .sede-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .sede-card {
+      background: #2a2a2a;
+      border: 1px solid #3a3a3a;
+      border-radius: 0.75rem;
+      padding: 2rem;
+      text-align: center;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .sede-card:hover {
+      border-color: #c6b342;
+      transform: translateY(-4px);
+    }
+    .sede-card h3 {
+      color: #c6b342;
+      font-size: 1.3rem;
+      margin-bottom: 0.75rem;
+    }
+    .sede-card p {
+      color: #aaa;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+    }
+    .sede-card .sede-direccion {
+      color: #ccc;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    .instalaciones-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .instalacion-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      background: #2a2a2a;
+      border: 1px solid #3a3a3a;
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+    }
+    .instalacion-icono {
+      font-size: 2rem;
+      flex-shrink: 0;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(198, 179, 66, 0.15);
+      border-radius: 0.5rem;
+    }
+    .instalacion-texto h4 {
+      color: #c6b342;
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+    }
+    .instalacion-texto p {
+      color: #aaa;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    @media (max-width: 960px) {
+      .sede-info { grid-template-columns: 1fr; }
+      .instalaciones-grid { grid-template-columns: 1fr; }
+      .mapa-container { height: 350px; }
+    }
+    @media (max-width: 480px) {
+      .mapa-container { height: 280px; }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#contenido" class="skip-link" data-i18n="skip">Saltar al contenido principal</a>
+
+  <header>
+    <div class="container header-flex">
+      <a href="index.html" class="logo">
+        <img src="Logo.png" alt="Base Élite 17" class="logo-img">
+        <span>Base Élite 17</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+          <li><a href="programas.html" data-i18n="nav.programas">Programas</a></li>
+          <li><a href="resultados.html" data-i18n="nav.resultados">Resultados</a></li>
+          <li><a href="torneos.html" data-i18n="nav.torneos">Torneos</a></li>
+          <li><a href="inscripciones.html" data-i18n="nav.inscripciones">Inscripciones</a></li>
+          <li><a href="ubicacion.html" class="activo" data-i18n="nav.ubicacion">Ubicación</a></li>
+          <li><a href="sobre-nosotros.html" data-i18n="nav.sobre">Sobre Nosotros</a></li>
+          <li><a href="staff.html" data-i18n="nav.staff">Staff</a></li>
+          <li><a href="index.html#contacto" data-i18n="nav.contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="lang-selector" role="navigation" aria-label="Selector de idioma">
+        <button class="lang-btn" aria-expanded="false" aria-haspopup="listbox">
+          <span class="lang-current">ES</span>
+          <svg class="lang-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <ul class="lang-list" role="listbox">
+          <li role="option" data-lang="es" class="lang-active">ES — Español</li>
+          <li role="option" data-lang="ca">CA — Català</li>
+          <li role="option" data-lang="en">EN — English</li>
+        </ul>
+      </div>
+      <button class="menu-boton" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <section class="pagina-header gris">
+      <div class="container">
+        <h1 class="seccion-titulo" data-i18n="ubi.titulo">Nuestras Instalaciones</h1>
+        <p class="seccion-subtitulo" data-i18n="ubi.sub">Tres ubicaciones en la zona de Barcelona para que elijas la que mejor se adapte a ti. Todos nuestros campos cuentan con las mejores instalaciones.</p>
+      </div>
+    </section>
+
+    <section class="gris" style="padding-top:0;">
+      <div class="container">
+        <div class="mapa-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59845.46!2d2.15!3d41.62!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49e0b7e7b7b7b%3A0x7b7b7b7b7b7b7b7b!2sSanta%20Eul%C3%A0lia%20de%20Ron%C3%A7ana%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de ubicaciones de Base Élite 17"></iframe>
+        </div>
+
+        <div class="sede-info">
+
+          <div class="sede-card">
+            <h3 data-i18n="ubi.campo1.titulo">Camp Municipal de Corrà d'Avall</h3>
+            <p class="sede-direccion">08520, Barcelona</p>
+            <p data-i18n="ubi.campo1.desc">Campo principal de nuestra academia. Superficie de césped natural con iluminación artificial para entrenamientos vespertinos.</p>
+            <p><strong data-i18n="ubi.campo1.uso">Uso:</strong> <span data-i18n="ubi.campo1.uso.txt">Entrenamientos y torneos oficiales</span></p>
+          </div>
+
+          <div class="sede-card">
+            <h3 data-i18n="ubi.campo2.titulo">Camp de Futbol 7 Bellavista</h3>
+            <p class="sede-direccion">08521, Barcelona</p>
+            <p data-i18n="ubi.campo2.desc">Campo de fútbol 7 ideal para sesiones de tecnificación y entrenamientos personalizados en grupos reducidos.</p>
+            <p><strong data-i18n="ubi.campo2.uso">Uso:</strong> <span data-i18n="ubi.campo2.uso.txt">Tecnificación y entrenamiento personalizado</span></p>
+          </div>
+
+          <div class="sede-card">
+            <h3 data-i18n="ubi.campo3.titulo">Santa Eulàlia de Ronçana</h3>
+            <p class="sede-direccion">08187, Barcelona</p>
+            <p data-i18n="ubi.campo3.desc">Nuestra sede en Santa Eulàlia. Campo polideportivo con acceso fácil desde la autovía y aparcamiento amplio.</p>
+            <p><strong data-i18n="ubi.campo3.uso">Uso:</strong> <span data-i18n="ubi.campo3.uso.txt">Clases y eventos especiales</span></p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="dorado">
+      <div class="container">
+        <h2 class="seccion-titulo" style="color:#000;" data-i18n="ubi.inst.titulo">Nuestras Instalaciones</h2>
+        <p class="seccion-subtitulo" style="color:#333;" data-i18n="ubi.inst.sub">Todos nuestros campos cuentan con las comodidades necesarias para una experiencia deportiva completa.</p>
+
+        <div class="instalaciones-grid">
+
+          <div class="instalacion-item">
+            <div class="instalacion-icono">🚿</div>
+            <div class="instalacion-texto">
+              <h4 data-i18n="ubi.inst.duchas">Duchas</h4>
+              <p data-i18n="ubi.inst.duchas.desc">Vestuarios completos con duchas de agua caliente para antes y después de cada sesión.</p>
+            </div>
+          </div>
+
+          <div class="instalacion-item">
+            <div class="instalacion-icono">👕</div>
+            <div class="instalacion-texto">
+              <h4 data-i18n="ubi.inst.vestuarios">Vestuarios</h4>
+              <p data-i18n="ubi.inst.vestuarios.desc">Vestuarios amplios y equipados con taquillas individuales para cada jugador y jugadora.</p>
+            </div>
+          </div>
+
+          <div class="instalacion-item">
+            <div class="instalacion-icono">🅿️</div>
+            <div class="instalacion-texto">
+              <h4 data-i18n="ubi.inst.aparcamiento">Aparcamiento</h4>
+              <p data-i18n="ubi.inst.aparcamiento.desc">Zona de aparcamiento gratuita cerca de todos los campos para familias y acompañantes.</p>
+            </div>
+          </div>
+
+          <div class="instalacion-item">
+            <div class="instalacion-icono">💡</div>
+            <div class="instalacion-texto">
+              <h4 data-i18n="ubi.inst.iluminacion">Iluminación</h4>
+              <p data-i18n="ubi.inst.iluminacion.desc">Iluminación artificial de última generación para entrenamientos en horario vespertino.</p>
+            </div>
+          </div>
+
+          <div class="instalacion-item">
+            <div class="instalacion-icono">🏥</div>
+            <div class="instalacion-texto">
+              <h4 data-i18n="ubi.inst.primerosaux">Primeros Auxilios</h4>
+              <p data-i18n="ubi.inst.primerosaux.desc">Botiquín de primeros auxilios disponible en cada sede y personal formado en emergencias.</p>
+            </div>
+          </div>
+
+          <div class="instalacion-item">
+            <div class="instalacion-icono">🚌</div>
+            <div class="instalacion-texto">
+              <h4 data-i18n="ubi.inst.acceso">Acceso Fácil</h4>
+              <p data-i18n="ubi.inst.acceso.desc">Todos los campos tienen acceso en coche y transporte público. Fácil llegada desde Barcelona.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-flex">
+      <div>
+        <span class="logo">Baseélite17</span>
+        <p data-i18n="footer.desc">Base educativa, formativa e inclusiva para el desarrollo integral de jugadores y jugadoras de fútbol profesional.</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.enlaces">Enlaces</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+          <li><a href="programas.html" data-i18n="nav.programas">Programas</a></li>
+          <li><a href="resultados.html" data-i18n="nav.resultados">Resultados</a></li>
+          <li><a href="torneos.html" data-i18n="nav.torneos">Torneos</a></li>
+          <li><a href="inscripciones.html" data-i18n="nav.inscripciones">Inscripciones</a></li>
+          <li><a href="ubicacion.html" data-i18n="nav.ubicacion">Ubicación</a></li>
+          <li><a href="sobre-nosotros.html" data-i18n="nav.sobre">Sobre Nosotros</a></li>
+          <li><a href="staff.html" data-i18n="nav.staff">Staff</a></li>
+          <li><a href="index.html#contacto" data-i18n="nav.contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.redes">Redes</h4>
+        <ul>
+          <li><a href="https://instagram.com/baseelite17" rel="noopener">Instagram</a></li>
+          <li><a href="https://tiktok.com/@baseelite17" rel="noopener">TikTok</a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=637333505" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer.copyright">&copy; 2026 Base Élite 17. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

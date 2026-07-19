@@ -145,6 +145,7 @@ nav a.activo {
 
 .hero {
   height: 100vh;
+  height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -508,8 +509,14 @@ blockquote {
   color: #aaa;
   font-size: 0.95rem;
   line-height: 1.6;
-  margin: 0 1.25rem 1.25rem;
+  margin: 0 1.25rem 0.5rem;
   flex: 1;
+}
+
+.insc-btn {
+  margin: 0 1.25rem 1.25rem;
+  text-align: center;
+  display: block;
 }
 
 .torneos-inclusion-section {
@@ -731,6 +738,7 @@ blockquote {
   justify-content: center;
   width: 100%;
   overflow: hidden;
+  touch-action: pan-y;
 }
 
 .carousel-3d-container {
@@ -1146,12 +1154,12 @@ footer a:hover {
   .btn-3d-prev, .btn-3d-next { width: 44px; height: 44px; font-size: 1.2rem; }
   .btn-3d-prev { left: 4px; }
   .btn-3d-next { right: 4px; }
-  .torneos-grid { grid-template-columns: 1fr 1fr; }
   .torneo-img { height: 200px; }
   .torneos-inscripcion { padding: 2rem 1.5rem; }
   .torneos-inscripcion h3 { font-size: 1.4rem; }
   .inclusion-img { height: 220px; }
   blockquote { font-size: 1.3rem; }
+  .servicio-imagen { height: 220px; }
 }
 
 @media (max-width: 480px) {
@@ -1175,6 +1183,109 @@ footer a:hover {
   .resultado-img { height: 160px; }
   .pagina-header { padding: 2rem 0; }
   .staff-card { padding: 1.5rem; }
+  .modal-overlay { padding: 1rem; }
+  .servicio-imagen { height: 200px; }
+}
+
+/* ===== TAP TARGETS & TOUCH FIXES ===== */
+.menu-boton {
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-btn {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.lang-list li {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.modal-cerrar {
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 960px) {
+  nav a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .staff-card-destacado {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .staff-foto-grande {
+    width: 150px;
+    height: 150px;
+  }
+
+  .staff-card-destacado .staff-tags {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .staff-card-destacado {
+    padding: 1.5rem 1rem;
+  }
+
+  .staff-foto-grande {
+    width: 120px;
+    height: 120px;
+  }
+
+  .torneos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Hover sticky fix for touch devices */
+@media (hover: none) {
+  .servicio-card:hover,
+  .servicio-card:focus-visible {
+    transform: none;
+    box-shadow: none;
+    border-color: #3a3a3a;
+  }
+
+  .servicio-card:active {
+    transform: translateY(-2px);
+    border-color: #c6b342;
+  }
+
+  .torneo-card:hover {
+    transform: none;
+  }
+
+  .torneo-card:active {
+    transform: translateY(-2px);
+    border-color: #c6b342;
+  }
+
+  .staff-card:hover {
+    transform: none;
+  }
+
+  .staff-card:active {
+    transform: translateY(-2px);
+    border-color: #c6b342;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

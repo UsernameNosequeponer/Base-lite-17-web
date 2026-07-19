@@ -212,8 +212,8 @@
       if (window.innerWidth >= 960)
         return { offsets: [320, 540], rotations: [10, 20], scales: [0.85, 0.58] };
       if (window.innerWidth >= 600)
-        return { offsets: [250, 420], rotations: [10, 18], scales: [0.82, 0.55] };
-      return { offsets: [200, 340], rotations: [8, 16], scales: [0.78, 0.5] };
+        return { offsets: [200, 350], rotations: [8, 16], scales: [0.82, 0.55] };
+      return { offsets: [140, 260], rotations: [6, 12], scales: [0.78, 0.5] };
     }
 
     function setPosition(index, animate) {
@@ -251,16 +251,70 @@
       }
     }
 
-    nextBtn.addEventListener("click", function () {
+    function goNext() {
       currentIndex++;
       if (currentIndex >= total) currentIndex = 0;
       setPosition(currentIndex, true);
-    });
+    }
 
-    prevBtn.addEventListener("click", function () {
+    function goPrev() {
       currentIndex--;
       if (currentIndex < 0) currentIndex = total - 1;
       setPosition(currentIndex, true);
+    }
+
+    nextBtn.addEventListener("click", goNext);
+    prevBtn.addEventListener("click", goPrev);
+
+    /* Touch / swipe support */
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchDeltaX = 0;
+    var isSwiping = false;
+
+    var carouselWrapper = document.querySelector(".carousel-3d-wrapper");
+    if (carouselWrapper) {
+      carouselWrapper.addEventListener("touchstart", function (e) {
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+        touchDeltaX = 0;
+        isSwiping = false;
+      }, { passive: true });
+
+      carouselWrapper.addEventListener("touchmove", function (e) {
+        var dx = e.touches[0].clientX - touchStartX;
+        var dy = e.touches[0].clientY - touchStartY;
+        if (!isSwiping && Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 10) {
+          isSwiping = true;
+        }
+        if (isSwiping) {
+          touchDeltaX = dx;
+          e.preventDefault();
+        }
+      }, { passive: false });
+
+      carouselWrapper.addEventListener("touchend", function () {
+        if (isSwiping && Math.abs(touchDeltaX) > 40) {
+          if (touchDeltaX < 0) goNext();
+          else goPrev();
+        }
+        isSwiping = false;
+        touchDeltaX = 0;
+      }, { passive: true });
+    }
+
+    /* Close mobile menu on outside tap */
+    document.addEventListener("click", function (e) {
+      var nav = document.querySelector("nav");
+      if (nav && nav.classList.contains("abierto")) {
+        if (!nav.contains(e.target) && e.target !== menuBoton) {
+          nav.classList.remove("abierto");
+          if (menuBoton) {
+            menuBoton.setAttribute("aria-expanded", "false");
+            menuBoton.textContent = "\u2630";
+          }
+        }
+      }
     });
 
     var resizeTimer;
