@@ -27,7 +27,7 @@ var I18N = {
     // INDEX - HERO
     "index.hero.titulo": "Formamos futbolistas. Y personas.",
     "index.hero.sub": "Base educativa, formativa e inclusiva",
-    "index.hero.desc": "En Base Élite 17 desarrollamos el talento de cada jugador dentro y fuera del campo. Tecnificaciones, entrenamiento especializado y torneos de élite en Santa Eulàlia de Ronçana.",
+    "index.hero.desc": "En Base Élite 17 desarrollamos el talento de cada jugador dentro y fuera del campo. Tecnificaciones, entrenamiento especializado y torneos de élite en el Vallès Oriental.",
     "index.hero.cta1": "Descubrir qué hacemos",
     "index.hero.cta2": "Contactar",
     "index.hero.cta3": "Inscribirse",
@@ -274,7 +274,7 @@ var I18N = {
     // INDEX - HERO
     "index.hero.titulo": "Formem futbolistes. I persones.",
     "index.hero.sub": "Base educativa, formativa i inclusiva",
-    "index.hero.desc": "A Base Élite 17 desenvolupem el talent de cada jugador dins i fora del camp. Tecnificacions, entrenament especialitzat i tornejos d'elit a Santa Eulàlia de Ronçana.",
+    "index.hero.desc": "A Base Élite 17 desenvolupem el talent de cada jugador dins i fora del camp. Tecnificacions, entrenament especialitzat i tornejos d'elit al Vallès Oriental.",
     "index.hero.cta1": "Descobrir què fem",
     "index.hero.cta2": "Contactar",
     "index.hero.cta3": "Inscriure's",
@@ -521,7 +521,7 @@ var I18N = {
     // INDEX - HERO
     "index.hero.titulo": "We develop footballers. And people.",
     "index.hero.sub": "Educational, formative and inclusive foundation",
-    "index.hero.desc": "At Base Élite 17 we develop each player's talent on and off the pitch. Technical training, specialized coaching and elite tournaments in Santa Eulàlia de Ronçana.",
+    "index.hero.desc": "At Base Élite 17 we develop each player's talent on and off the pitch. Technical training, specialized coaching and elite tournaments in the Vallès Oriental.",
     "index.hero.cta1": "Discover what we do",
     "index.hero.cta2": "Contact us",
     "index.hero.cta3": "Register",
