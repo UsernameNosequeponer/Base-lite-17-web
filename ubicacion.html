@@ -182,6 +182,7 @@
 
     <section class="gris" style="padding-top:0;">
       <div class="container">
+        <p id="mapa-label" style="text-align:center;color:#c6b342;font-weight:600;font-size:1.05rem;margin-bottom:1rem;">Mostrando: Camp de Futbol 7 Bellavista</p>
         <div class="mapa-container">
           <iframe id="mapa-sede" src="https://www.google.com/maps?q=41.624649,2.296668&z=17&hl=es&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de ubicaciones de Base Élite 17"></iframe>
         </div>
@@ -277,11 +278,13 @@
     var sedes = {
       bellavista: {
         coords: '41.624649,2.296668',
-        foto: 'imagenes/campo-bellavista.png'
+        foto: 'imagenes/campo-bellavista.png',
+        nombre: 'Camp de Futbol 7 Bellavista'
       },
       corro: {
         coords: '41.623393,2.29598',
-        foto: 'imagenes/campo-corro-avall.jpg'
+        foto: 'imagenes/campo-corro-avall.jpg',
+        nombre: 'Camp Municipal de Corró d\'Avall'
       }
     };
 
@@ -291,6 +294,8 @@
 
       document.getElementById('mapa-sede').src =
         'https://www.google.com/maps?q=' + sede.coords + '&z=17&hl=es&output=embed';
+
+      document.getElementById('mapa-label').textContent = 'Mostrando: ' + sede.nombre;
 
       document.getElementById('campo-fondo').style.backgroundImage =
         "linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('" + sede.foto + "')";
