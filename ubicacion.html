@@ -84,13 +84,10 @@
     }
     .campo-fondo {
       position: relative;
-      min-height: 300px;
       background-size: cover;
       background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       transition: background-image 0.5s ease;
+      padding: 3rem 0;
     }
     .campo-fondo::before {
       content: '';
@@ -173,15 +170,10 @@
 
   <main id="contenido">
 
-    <section class="pagina-header gris">
+    <section class="campo-fondo" id="campo-fondo" style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('imagenes/campo-bellavista.png');">
       <div class="container">
         <h1 class="seccion-titulo" data-i18n="ubi.titulo">Nuestras Instalaciones</h1>
         <p class="seccion-subtitulo" data-i18n="ubi.sub">Sede principal en Camp de Futbol 7 Bellavista. Instalaciones diseñadas para el máximo rendimiento de cada jugador y jugadora.</p>
-      </div>
-    </section>
-
-    <section class="gris" style="padding-top:0;">
-      <div class="container">
         <p id="mapa-label" style="text-align:center;color:#c6b342;font-weight:600;font-size:1.05rem;margin-bottom:1rem;">Mostrando: Camp de Futbol 7 Bellavista</p>
         <div class="mapa-container">
           <iframe id="mapa-sede" src="https://www.google.com/maps?q=41.624649,2.296668&z=17&hl=es&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de ubicaciones de Base Élite 17"></iframe>
@@ -208,7 +200,7 @@
       </div>
     </section>
 
-    <section class="campo-fondo" id="campo-fondo" style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('imagenes/campo-bellavista.png');">
+    <section class="gris">
       <div class="container">
         <h2 class="seccion-titulo" data-i18n="ubi.inst.titulo">Nuestras Instalaciones</h2>
         <p class="seccion-subtitulo" data-i18n="ubi.inst.sub">Nuestras instalaciones cuentan con lo esencial para una experiencia deportiva cómoda.</p>
